@@ -1,0 +1,325 @@
+<%#*<div class="ui modal behavior-messages_search" ng-init="$app.$jQuery('.modal.behavior-messages_search').modal('show')">%>
+<div class="ui modal behavior-messages_search">
+    <br/>
+    <i class="close icon"></i>
+
+    <div class="content ui form" style="margin: 0px !important;">
+        <%= form_tag('/researcher/messages', method: :get, name: 'form') do |form| %>
+
+          <%= hidden_field_tag 'search', true %>
+
+          <div class="three fields">
+              <div class="field">
+                  <label>
+                      <span
+                          class="material-icons"
+                          style="
+                          font-size: 18px;
+                          position: relative;
+                          bottom: -3px;
+                          margin-right: 3px;
+                          "
+                          >library_books</span>
+
+                      Nome Bot:
+                  </label>
+
+                  <div class="ui input">
+                      <%= text_field_tag 'interaction_name', params[:interaction_name], placeholder: 'Digite o nome...' %>
+                  </div>
+              </div>
+
+              <div class="field">
+                  <label>
+                      <i class="icon user"></i>
+                      Buscar Conversa do Usuário:
+                  </label>
+
+                  <div class="ui input">
+                      <%= text_field_tag 'user_chat', params[:user_chat], rows: 4, placeholder: 'Digite o nome...' %>
+                  </div>
+              </div>
+
+              <div class="field">
+                  <label>
+                      <i class="icon user"></i>
+                      Apenas Usuário Origem:
+                  </label>
+
+                  <div class="ui input">
+                      <%= text_field_tag 'origin_user_name', params[:origin_user_name], rows: 4, placeholder: 'Digite o nome...' %>
+                  </div>
+              </div>
+
+              <div class="field">
+                  <label>
+                      <i class="icon user"></i>
+                      Apenas Usuário Destino:
+                  </label>
+
+                  <div class="ui input">
+                      <%= text_field_tag 'destiny_user_name', params[:destiny_user_name], rows: 4, placeholder: 'Digite o nome...' %>
+                  </div>
+              </div>
+          </div>
+
+          <div class="two fields">
+              <div class="field">
+                  <% selecteds = !params[:types].nil? ? params[:types] : [1, 2, 3, 4, 5] %>
+
+                  <%= label_tag 'types', '<i class="icon th large"></i> Tipos:'.html_safe %>
+
+                  <%=
+                  select_tag 'types[]',
+                    options_for_select(
+                    Acronym.where(data_refer: 'messages.type').map { |a| [a.name, a.id] },
+                  selecteds
+                    ),
+                    multiple: true,
+                    class: 'ui dropdown'
+                  %>
+                </div>
+
+
+                <div class="field">
+                    <label>
+                        <i class="icon align left"></i>
+                        Conteúdo:
+                    </label>
+
+                    <div class="ui input">
+                        <%= text_area_tag 'content', params[:content], rows: 4, placeholder: 'Digite uma parte da mensagem...' %>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ui grid three columns" style="margin-bottom: -30px;">
+                <div class="column">
+                    <div class="ui segment basic">
+                        <div class="field disabled">
+                            <label>
+                                <i class="icon eye"></i>
+                                Mensagens Visualizadas:
+                            </label>
+
+                            <select name="views" class="ui select dropdown">
+                                <option value="1">Visualizadas e não visualizadas</option>
+                                <option value="2">Apenas visualizadas</option>
+                                <option value="3">Apenas não visualizadas</option>
+                            </select>
+                        </div>
+
+                        <div class="field disabled">
+                            <div class="two fields">
+                                <div class="field">
+                                    <label>Mínimo:</label>
+                                    <input name="views_min" placeholder="Mínimo" />
+                                </div>
+
+                                <div class="field">
+                                    <label>Máximo:</label>
+                                    <input name="views_max" placeholder="Máxino" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui segment basic">
+                        <div class="field disabled">
+                            <label>
+                                <i class="icon share"></i>
+                                Mensagens Compartilhadas:
+                            </label>
+
+                            <select name="share" class="ui select dropdown">
+                                <option value="1">Compart. e não compartilhadas</option>
+                                <option value="2">Apenas compartilhadas</option>
+                                <option value="3">Apenas não compartilhadas</option>
+                            </select>
+                        </div>
+
+                        <div class="field disabled">
+                            <div class="two fields">
+                                <div class="field">
+                                    <label>Mínimo:</label>
+                                    <input name="views_min" placeholder="Mínimo" />
+                                </div>
+
+                                <div class="field">
+                                    <label>Máximo:</label>
+                                    <input name="views_max" placeholder="Máxino" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="ui segment basic">
+                        <div class="field disabled">
+                            <label>
+                                <i class="icon star"></i>
+                                Mensagens Favoritas:
+                            </label>
+
+                            <select name="star" class="ui select dropdown">
+                                <option value="1">Favoritas e não favoritas</option>
+                                <option value="2">Apenas favoritas</option>
+                                <option value="3">Apenas não favoritas</option>
+                            </select>
+                        </div>
+
+
+                        <div style="font-weight: bold; margin-bottom: 5px; opacity: 0.3">
+                            <label>
+                                <i class="icon time"></i>
+                                Tempo de Foco:
+                            </label>
+                        </div>
+
+                        <div class="two fields disabled">
+                            <div class="field">
+                                <input name="views_min" placeholder="Mínimo" />
+                            </div>
+
+                            <div class="field">
+                                <input name="views_min" placeholder="Máximo" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="ui grid three columns" style="margin-top: 0px;">
+                <div class="column">
+                    <div class="ui segment basic">
+                        <div class="field disabled">
+                            <label>
+                                <i class="icon heart"></i>
+                                Polaridade Emocional
+                            </label>
+
+                            <select name="star" class="ui select dropdown">
+                                <option value="1">Positiva e Negativa</option>
+                                <option value="2">Apenas positiva</option>
+                                <option value="3">Apenas negativa</option>
+                            </select>
+                        </div>
+
+
+                        <div class="field disabled">
+                            <div class="two fields">
+                                <div class="field">
+                                    <label>Mínimo:</label>
+                                    <input name="views_min" placeholder="Mínimo" />
+                                </div>
+
+                                <div class="field">
+                                    <label>Máximo:</label>
+                                    <input name="views_max" placeholder="Máxino" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="ui segment basic">
+
+    <%#*<div class="ui message info">%>
+    <%#*<i class="icon info"></i>%>
+
+    <%#*Datas de Criação ou Envio representam unicamente o mesmo%>
+    <%#*campo, sendo "criação" para mensagens do Bot, e envio para%> 
+    <%#*as propagadas em conversas usuários.%>
+    <%#*</div>%>
+
+                        <div class="two fields disabled">
+                            <div class="field">
+                                <label>
+                                    <i class="icon calendar alternate"></i>
+                                    Data Inicial:
+                                </label>
+
+                                <input placeholder="xx/xx/xxxx" />
+                            </div>
+
+                            <div class="field">
+                                <label>Hora Inicial:</label>
+
+                                <input placeholder="00:00" />
+                            </div>
+                        </div>
+
+
+                        <div class="two fields disabled">
+                            <div class="field">
+                                <label>
+                                    <i class="icon calendar alternate"></i>
+                                    Data Final:
+                                </label>
+
+                                <input placeholder="xx/xx/xxxx" />
+                            </div>
+
+                            <div class="field">
+                                <label>Hora Final:</label>
+
+                                <input placeholder="00:00" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="ui segment basic">
+                        <div class="field disabled">
+                            <label>
+                                <i class="mail icon"></i>
+                                Categoria:
+                            </label>
+
+                            <select name="star" class="ui select dropdown">
+                                <option value="1">Mensagens de bot e conversas</option>
+                                <option value="2">Apenas de bot</option>
+                                <option value="3">Apenas de conversas</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="ui vertical segment right aligned">
+                <a
+                    href="/researcher/messages"
+                    class="ui deny button icon">
+                    <i class="icon minus"></i>
+
+                    Limpar
+                </a>
+
+                <button
+                    type="submit"
+                    class="ui teal button">
+                    <i class="search icon"></i>
+
+                    Buscar
+                </button>
+            </div>
+        </div>
+
+      <% end %>
+  </div>

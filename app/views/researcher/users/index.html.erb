@@ -1,0 +1,326 @@
+<br/>
+
+<h1 class="ui header">
+    <span class="material-icons" style="font-size: 50px;">people_alt</span>
+
+    <div class="content" style="position: relative; bottom: -7px">
+        Usuários e Voluntários
+    </div>
+</h1>
+
+<div class="ui fitted divider"></div>
+
+<div class="ui segment basic right aligned" style="background: none; padding-left: 0; padding-right: 0;">
+    <div class="ui button white disabled">
+        <i class="icon check green"></i>
+        Permitir Botão "Cadastre-se"
+    </div>
+</div>
+
+<div class="ui fitted divider"></div>
+
+<table class="ui table selectable very basic large">
+    <thead>
+        <tr>
+            <th>Usuário</th>
+            <th>App</th>
+            <th>Tipo</th>
+            <th>Nome</th>
+            <th>Senha</th>
+            <th>Contatos(views)</th>
+            <th>Dados Interativos</th>
+            <th class="collapsing">
+                <%= link_to new_researcher_user_path, class: 'ui icon blue button' do %>
+                    <i class="add icon"></i>
+                  <% end %>
+              </th>
+          </tr>
+      </thead>
+
+      <tbody>
+          <% @users.each do |i| %>
+            <tr>
+                <td class="ws-no-white">
+                    <b>
+                        <%= i.name %>
+                    </b>
+
+                    <div style="font-size: 80%; color: grey; margin-top: 5px">
+                        Registro <%= i.created_at.in_time_zone('America/Sao_Paulo').strftime('%d/%m/%Y %H:%M') %>
+                    </div>
+                </td>
+
+                <td style="text-align: center;">
+                    <% if i.chat_connected %>
+                      <i class="icon circle green"></i>
+                    <% else %>
+                      <i class="icon circle red"></i>
+                    <% end %>
+                </td>
+
+                <td class="ws-no-white" style="color: grey; font-size: 90%;">
+                    <% if i.type_acronym_id == 200 %>
+                      <label class="ui label blue">
+                          Pesquisador
+                      </label>
+                    <% else %>
+                      <label class="ui label purple">
+                          Voluntário
+                      </label>
+                    <% end %>
+                </td>
+
+                <td class="ws-no-white">
+                    <% if  i.entity_name %>
+                      <%= i.entity_name %>
+                    <% else %>
+                      <div class="ui label disabled">
+                          Não informado
+                      </div>
+                    <% end %>
+                </td>
+
+                <td class="ws-no-white" style="color: grey; font-size: 90%;">
+                    <i class="icon lock grey"></i>
+                    <%= i.password %>
+                </td>
+
+                <td>
+                    <% if i.type_acronym_id == 200 %>
+                      <div class="ui label disabled">
+                          Pesquisador não possui dados
+                      </div>
+                    <% else %>
+                      <div style="color: grey; font-size: 90%;">
+                          <% i.contacts.each do |c| %>
+                            <span class="ui label" style="margin-top: 5px;">
+                                <i class="icon mail"></i>
+
+                                <%= Acronym.select(:name).find(c.type_acronym_id).name %>:
+
+                                <%= c.name %>
+                                /
+                                <%= c.count_views %>
+                            </span>
+                          <% end %>
+                      </div>
+                    <% end %>
+                </td>
+
+                <td>
+                    <% if i.type_acronym_id == 200 %>
+                      <div class="ui label disabled">
+                          Pesquisador não possui dados
+                      </div>
+                    <% else %>
+
+
+
+
+
+
+
+
+
+                      <!-- recebidas -->
+                      <%
+                      count_messages_received = Message.sql("
+        SELECT count(*)
+        FROM messages
+        WHERE destiny_user_id = #{i.id}
+                      ").first['count(*)']
+                    %>
+
+                      <% if count_messages_received > 0 %>
+                        <%
+                        polarity_received = Message.sql("
+                          SELECT sum(sentimental_score)
+                          FROM messages
+                          WHERE destiny_user_id = #{i.id}
+                        ").first['sum(sentimental_score)']
+                        
+                        if (polarity_received != nil)
+                          polarity_received = polarity_received / count_messages_received
+                        else
+                          polarity_received = 0
+                        end
+                      %>
+
+                        <div class="ui label ws-no-white" style="margin-top: 5px;">
+                            Recebidas e Polaridade
+                            <div class="detail">
+                                <%= count_messages_received %>
+                                &nbsp;
+
+                                <% if polarity_received < 0 %>
+                                  <span style="color: red;">
+                                      <%= '%.2f' % polarity_received %>
+                                  </span>
+                                <% elsif polarity_received == 0 %>
+                                  0.00
+                                <% elsif polarity_received > 0 %>
+                                  <span style="color: green;">
+                                      <%= '%.2f' % polarity_received %>
+                                  </span>
+                                <%  end %>
+                            </div>
+                        </div>
+                      <% else %>
+                        <div class="ui label ws-no-white" style="margin-top: 5px;">
+                            Recebidas e Polaridade
+                            <div class="detail">
+                                0 &nbsp; --
+                            </div>
+                        </div>
+                      <% end %>
+
+
+
+
+
+                      <!-- respostas -->
+                      <%
+                      count_messages_send = Message.sql("
+        SELECT count(*)
+        FROM messages
+        WHERE origin_user_id = #{i.id}
+                      ").first['count(*)']
+                    %>
+                      <% if count_messages_send > 0 %>
+                        <%
+                        polarity_send = Message.sql("
+                          SELECT sum(sentimental_score)
+                          FROM messages
+                          WHERE origin_user_id = #{i.id}
+                        ").first['sum(sentimental_score)']
+                        
+                        if (polarity_send != nil)
+                          polarity_send = polarity_send / count_messages_send
+                        else
+                          polarity_send = 0
+                        end
+                      %>
+
+                        <div class="ui label ws-no-white" style="margin-top: 5px;">
+                            Enviadas e Polaridade
+                            <div class="detail">
+                                <%= count_messages_send %>
+                                &nbsp;
+
+                                <% if polarity_send < 0 %>
+                                  <span style="color: red;">
+                                      <%= '%.2f' % polarity_send %>
+                                  </span>
+                                <% elsif polarity_send == 0 %>
+                                  0.00
+                                <% elsif polarity_send > 0 %>
+                                  <span style="color: green;">
+                                      <%= '%.2f' % polarity_send %>
+                                  </span>
+                                <%  end %>
+                            </div>
+                        </div>
+                      <% else %>
+                        <div class="ui label ws-no-white" style="margin-top: 5px;">
+                            Respostas e Polaridade
+                            <div class="detail">
+                                0 &nbsp; --
+                            </div>
+                        </div>
+                      <% end %>
+
+
+                      
+
+
+                      <!-- compartilhamentos -->
+                      <% if count_messages_received > 0 %>
+
+                        <%
+                        count_shared = Message.sql("
+          SELECT count(*)
+          FROM message_shares
+          WHERE user_id = #{i.id};
+                        ").first['count(*)']
+                      %>
+                        <div class="ui label ws-no-white" style="margin-top: 5px;">
+                            Compartilhamentos
+                            <div class="detail">
+                                <%= count_shared %>
+                            </div>
+                        </div>
+                      <% else %>
+                        <div class="ui label ws-no-white" style="margin-top: 5px;">
+                            Compartilhamentos
+                            <div class="detail">
+                                0
+                            </div>
+                        </div>
+                      <% end %>
+
+
+
+
+                      <!-- favoritas -->
+                      <% if count_messages_received > 0 %>
+                        <%
+                        #count_stars = Message.sql("
+          #SELECT count(*)
+          #FROM messages
+          #WHERE destiny_user_id = #{i.id}
+          #AND favorited = true;
+                        #").first['count(*)']
+                        
+                        count_stars_params = Message.select('count(*)')
+                          .where(destiny_user_id: i.id)
+                          .where(favorited: true)
+                          .first['count(*)']
+                      %>
+                        <div class="ui label ws-no-white" style="margin-top: 5px;">
+                            Favoritas
+                            <div class="detail">
+                                <%= count_stars_params %>
+                            </div>
+                        </div>
+                      <% else %>
+                        <div class="ui label ws-no-white" style="margin-top: 5px;">
+                            Favoritas
+                            <div class="detail">
+                                0
+                            </div>
+                        </div>
+                      <% end %>
+
+
+
+
+
+
+                    <% end %>
+                </td>
+
+                <td>
+                    <div class="ui dropdown ws-center">
+                        <i class="icon ellipsis vertical grey" style="font-size: 20px;"></i>
+                        <div class="menu">
+
+                            <%= link_to '<i class="icon edit"></i> Editar'.html_safe, edit_researcher_user_path(i),
+                              class: 'item' %>
+
+                              <%= link_to '<i class="icon delete"></i> Deletar'.html_safe, researcher_user_path(i),
+                                method: :delete,
+                                class: 'item',
+                                  data: { confirm: 'Tem certeza?' } %>
+
+        <%#= link_to '<i class="icon chat"></i> Chat'.html_safe, "/researcher/chats/#{i.id}",
+        class: 'item' %>
+
+                                <%= link_to '<i class="icon mail"></i> Ver Mensagens'.html_safe, "/researcher/messages?utf8=✓&search=true&interaction_name=&user_chat=#{i.name}&origin_user_name=&destiny_user_name=&types%5B%5D=1&types%5B%5D=2&types%5B%5D=3&types%5B%5D=4&types%5B%5D=5&content=&views=1&views_min=&views_max=&share=1&views_min=&views_max=&star=1&views_min=&views_min=&star=1&views_min=&views_max=&star=1", 'target': '_blank',
+                                  class: 'item' %>
+                              </div>
+                          </div>
+                      </td>
+                  </tr>
+                <% end %>
+            </tbody>
+        </table>

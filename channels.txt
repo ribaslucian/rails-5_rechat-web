@@ -1,0 +1,9 @@
+Notificação de Mensagem:
+- Atualizar a mensagem no chat
+- Atualizar o menu do contato para negrito
+- Atualizar o menu principal e sub menu "conversas" inserindo símbolo de notificação
+
+Observações
+- Sempre ao entrar numa conversa todas as mensagens devem ser definidas como
+  "lidas". Mas essa chama da deve ser feita pelo "ready e showed" do jquery pois
+  somente depois que carregar e o usuario visualizar a tela.

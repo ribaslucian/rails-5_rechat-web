@@ -1,0 +1,87 @@
+<br/>
+
+<style>
+    body {
+        background-color: #333;
+    }
+
+    .ui.basic.segment {
+        border-radius: 8px;
+    }
+</style>
+
+<div class="ui middle centered three column grid stackable">
+    <div class="column">
+        <div class="ui very padded basic segment">
+
+            <h1 class="ui header">
+                <div class="content">
+                    <a href="<%= '/guest/users/login' %>" class="icon material-icons" style="position: relative; top: 2px; color: cornflowerblue">arrow_back</a>
+
+                    <b>Cadastre-se</b>
+                </div>
+            </h1>
+
+            <br/>
+
+            <%= form_with(model: @user, url: '/guest/users/sign_in', method: 'post', class: 'ui form', local: true) do |f| %>
+
+
+                <div class="field">
+                    <%= f.label(:name, '* Nome de usuário:') %>
+                    <%= f.text_field(:name, placeholder: '* Nome de usuário:') %>
+                </div>
+
+                <div class="field disabled" style="display: none;">
+                    <%= f.label(:type_acronym_id, '* Tipo de usuário:') %>
+
+                    <select class="ui dropdown" name="user[type_acronym_id]" id="user_type_acronym_id">
+                        <option value="201">Voluntário</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <%= f.label(:entity_name, 'Seu nome:') %>
+                    <%= f.text_field(:entity_name, placeholder: 'Seu nome:') %>
+                </div>
+
+                <h3 class="ui header">
+                    <b>Contatos</b>
+                </h3>
+
+                <div class="ui divider fitted"></div>
+                <br/>
+
+                <div style="color: grey; font-size: 90%">
+                    Informe ao menos 3 contatos que você costuma conversar nos
+                    aplicativos WhatsApp ou Telegram.
+                </div>
+
+                <br/>
+
+
+                <div id="contacts">
+                    <%= f.fields_for :contacts do |c| %>
+                      <%= render 'contact_fields', f: c %>
+                      <div class="ui divider fitted"></div>
+                      <br/>
+                    <% end %>
+
+                    <div class="links" style="margin-top: 20px; margin-left: 17px;">
+                        <%= link_to_add_association '<i class="icon add"></i>'.html_safe, f, :contacts, class: 'ui button icon blue' %>
+                      </div>
+                  </div>
+
+                  <br/>
+                  <div class="ui divider fitted"></div>
+                  <br/>
+
+                  <button type="submit" class="ui button large blue ws-center">
+                      Cadastrar
+                  </button>
+                <% end %>
+            </div>
+        </div>
+    </div>
+
+    <br/>

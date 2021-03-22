@@ -1,0 +1,259 @@
+<br/>
+
+<h1 class="ui header">
+<%#*<i class="home icon"></i>%>
+    <span class="material-icons" style="font-size: 50px;">library_books</span>
+
+    <div class="content" style="position: relative; bottom: -5px">
+        Bots
+    </div>
+</h1>
+
+<div class="ui message info blue">
+    <i class="icon info"></i>
+    Ao iniciar um bot, baseado na data de cadastro, todos os anteriores são definidos como "concluídos".
+</div>
+
+<div class="ui fitted divider"></div>
+
+<br/>
+
+<%#*<div style="overflow: auto !important; max-width: 100%;">%>
+<div>
+    <table class="ui table selectable very basic large unstackable">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Cadastro</th>
+                <th>Status</th>
+<%#*<th>Tipo</th>%>
+<%#*<th>Programação</th>%>
+<%#*<th>Horário</th>%>
+                <th style="text-align: center !important;">Tot. Mensagens</th>
+                <th style="text-align: center !important;">Tot. de <br/> Visualizações</th>
+                <th style="text-align: center !important;">Tempo tot. de Foco</th>
+                <th style="text-align: center !important;">
+                    Favoritadas &<br/>
+                    Compartilhamentos
+                </th>
+
+                <th style="text-align: center !important;">
+                    Média Emocional
+                </th>
+
+                <th class="collapsing">
+<%#*<div class="ui button icon" modal="modal_entities_search">%>
+<%#*<i class="icon search"></i>%>
+<%#*</div>%>
+
+                    <%= link_to new_researcher_interaction_path, class: 'ui icon blue button' do %>
+                        <i class="add icon"></i>
+                      <% end %>
+                  </th>
+              </tr>
+          </thead>
+
+          <tbody>
+              <% @interactions.each do |i| %>
+                <tr>
+                    <td>
+                        <b style="font-size: 110%">
+                            <%= i.name %>
+                        </b>
+                    </td>
+
+                    <td style="color: grey; font-size: 90%">
+                        <%= i.created_at %>
+                    </td>
+
+                    <td style="color: grey; font-size: 90%">
+                        <% if i.status_acronym_id == 650 %>
+                          <i class="icon play"></i>
+                        <% elsif i.status_acronym_id == 651 %>
+                          <i class="icon check"></i>
+                        <% elsif i.status_acronym_id == 653 %>
+                          <i class="icon refresh"></i>
+                        <% elsif i.status_acronym_id == 654 %>
+                          <i class="icon time"></i>
+                        <% end %>
+
+                        <%= Acronym.find(i.status_acronym_id).name %>
+                    </td>
+
+    <%#*<td style="color: grey; font-size: 90%;">%>
+    <%#= Acronym.select(:name).find(i.type_acronym_id).name %>
+    <%#*</td>%>
+
+    <%#*<td>%>
+    <%#= Acronym.select(:name).find(i.schedule_acronym_id).name %>
+    <%#*</td>%>
+
+    <%#*<td>%>
+    <%#*<i class="icon calendar alternate grey"></i>%>
+    <%#= i.number_schedule %>
+    <%#*</td>%>
+
+                    <td style="color: grey; font-size: 90%; text-align: center !important;">
+                        <%= i.messages.count %>
+                    </td>
+
+                    <td style="text-align: center !important;">
+                        <i class="icon eye grey"></i>
+
+                        <% count_views = Message.sql("
+      SELECT sum(count_views)
+      FROM messages
+      WHERE interaction_id = '#{i.id}'
+      AND destiny_user_id IS NOT NULL
+                        ").first['sum(count_views)'] %>
+
+                        <%= count_views ? count_views : 0 %>
+                    </td>
+
+                    <td style="text-align: center !important;">
+                        <% time_focus = Message.sql("SELECT sum(time_focus) FROM messages WHERE interaction_id = '#{i.id}'").first['sum(time_focus)'] %>
+
+                        <% if time_focus != nil && time_focus > 0 %>
+                          <div style="color: #1b68a3;">
+                              <%= '%.2f' % time_focus %>ms
+                          </div>
+                        <% else %>
+                          <div style="font-size: 90%; color: grey;">
+                              0.00ms
+                          </div>
+                        <% end %>
+                    </td>
+
+                    <td style="text-align: center !important;">
+                        <% stars = Message.where(interaction_id: i.id, favorited: true).count %>
+                        <% shares = MessageShare.where(interaction_id: i.id).count %>
+
+                        <% if stars > 0 %>
+                          <div class="ui label small yellow">
+                              <i class="icon star"></i>
+                              <%= stars %>
+                          </div>
+                        <% else %>
+                          <div class="ui label small yellow disabled">
+                              <i class="icon star"></i>
+                              0
+                          </div>
+                        <% end %>
+
+                        &nbsp;&nbsp;
+
+                        <% if shares > 0 %>
+                          <div class="ui label small blue">
+                              <i class="icon share"></i>
+                              <%= stars %>
+                          </div>
+                        <% else %>
+                          <div class="ui label small blue disabled">
+                              <i class="icon share"></i>
+                              0
+                          </div>
+                        <% end %>
+                    </td>
+
+                    <td style="text-align: center !important;">
+
+
+                        <% bot_sum_polarity = Message.sql("
+      SELECT sum(sentimental_score)
+      FROM messages
+      WHERE interaction_id = '#{i.id}'
+      AND destiny_user_id IS NULL
+                        ").first['sum(sentimental_score)'] %>
+
+                        <% bot_total_alvos = Message.sql("
+      SELECT count(*)
+      FROM messages
+      WHERE interaction_id = '#{i.id}'
+      AND destiny_user_id IS NULL
+      AND type_acronym_id = 2
+                        ").first['count(*)'] %>
+
+                        <% bot_avg = (bot_total_alvos != 0 && bot_total_alvos != nil && bot_sum_polarity != nil) ? (bot_sum_polarity/bot_total_alvos) : 0%>
+
+                        <div>
+                            <% if bot_avg < 0 %>
+                              <div class="ui label red">
+                                  Bot: <%= '%.2f' % bot_avg %>
+                              </div>
+                            <% elsif bot_avg == 0 %>
+                              <div class="ui label grey">
+                                  Bot: 0
+                              </div>
+                            <% else %>
+                              <div class="ui label green">
+                                  Bot: <%=  '%.2f' % bot_avg %>
+                              </div>
+                            <% end %>
+                        </div>
+
+
+
+
+
+                        <% responses_sum_polarity = Message.sql("
+      SELECT sum(sentimental_score)
+      FROM messages
+      WHERE reference_interaction_id = '#{i.id}'
+      AND destiny_user_id = 0
+                        ").first['sum(sentimental_score)'] %>
+
+                        <% responses_total_alvos = Message.sql("
+      SELECT count(*)
+      FROM messages
+      WHERE reference_interaction_id = '#{i.id}'
+      AND destiny_user_id = 0
+                        ").first['count(*)'] %>
+
+                        <% responses_avg = (responses_total_alvos != 0 && responses_total_alvos != nil && responses_sum_polarity != nil) ? (responses_sum_polarity/responses_total_alvos) : 0%>
+
+                        <div style="margin-top: 5px;">
+                            <% if responses_avg < 0 %>
+                              <div class="ui label red">
+                                  <i class="icon heart"></i>
+                                  Respostas: <%= '%.2f' % responses_avg %>
+                              </div>
+                            <% elsif responses_avg == 0 %>
+                              <div class="ui label grey">
+                                  <i class="icon heart"></i>
+                                  Respostas: 0
+                              </div>
+                            <% else %>
+                              <div class="ui label green">
+                                  <i class="icon heart"></i>
+                                  Respostas: <%= '%.2f' % responses_avg %>
+                              </div>
+                            <% end %>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="ui dropdown ws-center ">
+                            <i class="icon ellipsis vertical grey" style="font-size: 20px;"></i>
+                            <div class="menu">
+                                <%= link_to '<i class="icon edit"></i> Editar'.html_safe, edit_researcher_interaction_path(i),
+                                  class: 'item'
+                                %>
+
+                                  <%= link_to '<i class="icon delete"></i> Deletar'.html_safe, researcher_interaction_path(i),
+                                    method: :delete,
+                                    class: 'item',
+                                      data: { confirm: 'Tem certeza?' }
+                                  %>
+
+                                    <%= link_to '<i class="icon play"></i> Iniciar'.html_safe, "interactions/start/#{i.id}",
+                                      class: 'item',
+                                        data: { confirm: 'Isso irá parar as interações em vigor e irá iniciar essa.' }
+                                    %>
+                                  </div>
+                              </div>
+                          </td>
+                      </tr>
+                    <% end %>
+                </tbody>
+            </table>
+        </div>

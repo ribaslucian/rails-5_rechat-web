@@ -1,0 +1,24 @@
+<div class="nested-fields">
+  <div class="three fields">
+      <div class="four wide field" style="padding-top: 23px;">
+          <%= link_to_remove_association f, class: 'ui button icon ws-center' do %>
+            <i class="icon delete"></i>
+            <% end %>
+        </div>
+
+        <div class="six wide field">
+            <label>* Tipo:</label>
+
+            <%= f.select :type_acronym_id,
+              options_for_select(
+              Acronym.select(:id, :name).where(data_refer: 'contacts.type').map { |a| [a.name, a.id] },
+              f.object.type_acronym_id
+              ) %>
+        </div>
+
+        <div class="six wide field">
+            <%= f.label :name, 'Nome ou Apelido:' %>
+            <%= f.text_field :name %>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+attributes:
+  - primary_keys
+  - foreign_key
+  - content
+  - inheritance
+disconnected: true
+filename: relational_object_model
+filetype: pdf
+indirect: false
+inheritance: true
+markup: true
+notation: bachman
+orientation: vertical
+polymorphism: false
+sort: false
+warn: true
+only: null
+only_recursion_depth: null
+prepend_primary: false
+cluster: false
+title: false
+splines: spline

@@ -1,0 +1,45 @@
+<div class="ws-mobile-container-y ws-contacts">
+    <div class="ws-mobile-container-x">
+        <% Contact.order(:name).where(user_id: session[:user]["id"]).each do |c| %>
+        
+          <a href="<%= voluntary_chat_private_path(c.id) %>" class="ws-mobile-contact-item _ws-contact-active" id="contact_<%= c.id %>">
+              <div class="ws-mobile-column-1">
+                  <%= render partial: 'image', locals: {text: I18n.transliterate(c.name[0..1])} %>
+              </div>
+
+
+              <% m = Message.select(:id, :content, :chat_open).order(id: :desc).where(contact_id: c.id, origin_user_id: 0).first  %>
+              <%#= m.inspect %>
+
+              <div class="ws-mobile-column-2">
+
+                  <% if m && m.chat_open != true %>
+                    <i class="icon asterisk teal disabled large ws-center-absolute-y" style="right: 10px;"></i>
+                  <% end %>
+
+                  <div class="ws-center-absolute-y" style="left: 0px; max-width: 90%;">
+                      <div style="font-weight: 800;">
+
+                          <%= c.name %>
+                      </div>
+
+                      <div class="ws-contact-message">
+                          <% if m %>
+                            <% if m.chat_open == true %>
+                              <%= m.content %>
+                            <% else %>
+                              <b style="color: black; font-weight: 700 !important;">
+                                  <%= m.content %>
+                              </b>
+                            <% end %>
+                          
+                          <% else %>
+                            <i>Envie um uma mensagem...</i>
+                          <% end %>
+                      </div>
+                  </div>
+              </div>
+          </a>
+        <% end %>
+    </div>
+</div>

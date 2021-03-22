@@ -1,0 +1,55 @@
+<style>
+    #menu-voluntary {
+        display: none;
+    }
+</style>
+
+<div class="ws-menu">
+    <div class="ws-mobile-container-x">
+        <div class="ws-mobile-column-1">
+            <a href="<%= "/voluntary?contact_return=true&contact_id=#{params[:contact_id]}" %>" class="ws-center" style="color: white !important;">
+                <i class="icon arrow left large white"></i>
+            </a>
+        </div>
+
+        <div class="ws-mobile-column-2">
+            <div
+                class="ws-center-absolute-y"
+                style="
+                background: #1b68a3;
+                height: 35px;
+                width: 35px;
+                border-radius: 100%;
+                left: 0px;
+                ">
+
+                <div style="
+                     color: white;
+                     left: 50%;
+                     top: 50%;
+                     position: absolute;
+                     transform: translate(-50%, -50%);
+                     font-weight: 200;
+                     font-family: 'Ubuntu', sans-serif;
+                     font-weight: 800;
+                     font-size: 12px;
+                     ">
+
+                    <%= I18n.transliterate(@contact.name[0]) %>
+                </div>
+            </div>
+
+            <div style="
+                 position: relative;
+                 bottom: -1px;
+                 font-size: 17px;
+                 font-weight: 600 !important;
+                 letter-spacing: 1px;
+                 padding-left: 45px;
+                 ">
+
+                <%= @contact.name %>
+            </div>
+        </div>
+    </div>
+</div>

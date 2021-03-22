@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ReChat</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+
+        <%= stylesheet_link_tag 'application', media: 'all' %>
+
+        <%= javascript_include_tag 'application' %>
+    </head>
+
+    <body ng-app="ChatResearcher">
+        <div id="content-center">
+            <div id="main-container" class="ui main container">
+                <%= yield %>
+            </div>
+        </div>
+
+        <%= render 'layouts/alerts/alerts' %>
+        <%= render 'layouts/partials/loading' %>
+
+        <br/><br/>
+        <br/><br/>
+        <br/>
+    </body>
+</html>

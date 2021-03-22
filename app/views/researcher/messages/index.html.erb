@@ -1,0 +1,222 @@
+<br/>
+
+<h1 class="ui header">
+    <i class="mail icon"></i>
+
+    <div class="content" style="position: relative; bottom: -5px">
+        Mensagens
+    </div>
+</h1>
+
+<div class="ui fitted divider"></div>
+
+<div class="ui segment basic right aligned" style="padding: 0px; background: none;">
+
+    <div class="ui button disabled">
+        <span style="color: #888;">
+            Ordenação
+        </span>
+        &nbsp;&nbsp; Data de Criação &nbsp; <i class="icon arrow up"></i>
+    </div>
+
+    <div class="ui button icon" onclick="$('.modal.behavior-messages_search').modal('show')">
+        <i class="icon search"></i>
+    </div>
+</div>
+
+<%= render 'modal_messages_search' %>
+
+<div class="ui fitted divider"></div>
+
+<br/>
+
+<div style="overflow: auto !important; max-width: 100%;">
+    <table class="ui table selectable very basic small unstackable" style="white-space: nowrap !important;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Conteúdo</th>
+                <th>Usuário orig.<br/>Usuário dest.</th>
+                <th>Bot <br/> Sequência</th>
+                <th>Tipo</th>
+                <th>Favoritada<br/>Compartilhamentos</th>
+                <th>Visualizado<br/>Visualizações</th>                
+                <th>
+                    Tempo tot. de Foco <br/>
+                    Polaridade Emocional
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @messages.each do |m| %>
+              <tr>
+                  <td style="font-size: 90%;">
+                      <b><%= m.id %></b>
+                  </td>
+
+
+
+                  <td style="max-width: 200px !important;">
+                      <div class="text-overflow">
+                          <b>
+                              <%= m.type_content_name %>:
+                          </b>
+
+                          <%= m.content %>                   
+                      </div>
+
+                      <div style="font-size: 90%; color: grey; margin: 5px;">
+                          <%= m.created_at %>
+                      </div>
+                  </td>
+
+                  <td>
+                      <div>
+                          <% if m.destiny_user_id %>
+                            <% if m.origin_user_id == 0 %>
+                              Pesquisador
+                            <% else %>
+                              <%= m.origin_user_name %>
+                              (<%= m.contact_name %>)
+                            <% end %>
+                          <% else %>
+                            <span style="color: grey; font-size: 90%;">
+                                Msg. de Bot
+                            </span>
+                          <% end %>
+                      </div>
+
+                      <div>
+                          <% if m.destiny_user_id %>
+                            <% if m.destiny_user_id == 0 %>
+                              Pesquisador
+                            <% else %>
+                              <%= m.destiny_user_name %>
+
+                              <% if m.type_acronym_id == 6 %>
+                                (<%= Contact.select(:name).find(m.destiny_contact_id).name %>)
+                              <% else %>
+                                (<%= m.contact_name %>)
+                              <% end %>
+                            <% end %>
+                          <% else %>
+                            <span style="color: grey; font-size: 90%;">
+                                Msg. de Bot
+                            </span>
+                          <% end %>
+                      </div>
+                  </td>
+
+                  <td>
+                      <% if m.interaction_id %>
+                        <%= m.interaction_name %>
+                        <% if m.interaction_ids %>
+                          <br/> Sequência: <%= m.interaction_ids %>
+                        <% end %>
+                      <% else %>
+                        <% if !m.reference_interaction_id %>
+                          <div style="color: grey; font-size: 90%;">
+                              Não vinculada a Bot
+                          </div>
+                        <% else %>
+                          <div style="color: grey; font-size: 90%;">
+                              Referente ao Bot
+
+                              <b>
+                                <% if m.type_acronym_id == 6 %>
+                                  <%= m.interaction_id %>
+                                <% else %>
+                                  <%= m.reference_interaction_name %>
+                                <% end %>
+                              </b>
+                          </div>
+                        <% end %>
+                      <% end %>
+                  </td>
+
+                  <td style="font-size: 90%; color: grey;">
+                      <%= m.type_name %>
+                  </td>
+
+                  <td>
+                      <% if m.favorited %>
+                        <i class="star yellow icon"></i>
+                      <% else %>
+                        <div style="color: grey;">
+                            Não
+                        </div>
+                      <% end %>
+
+                      <div>
+                          <%= MessageShare.where(propagation_message_id: m.id).count %>
+                      </div>
+                  </td>
+
+                  <td>
+                      <div>
+                          <% if m.count_views > 0 %>
+                            <i class="green check icon"></i>
+                          <% else %>
+                            <span style="color: grey;">
+                                Não
+                            </span>
+                          <% end %>
+                      </div>
+
+                      <%= m.count_views %>
+                  </td>
+
+                  <td>
+                      <div>
+                          <% if m.time_focus > 0 %>
+                            <div style="color: #1b68a3;">
+                                <%= '%.2f' % m.time_focus %>ms
+                            </div>
+                          <% else %>
+                            <div style="color: grey;">
+                                0.00ms
+                            </div>
+                          <% end %>
+                      </div>
+
+                      <% if m.sentimental_score == nil || m.sentimental_score == 0 %>
+                        <div style="color: grey">
+                            0
+                        </div>
+                      <% elsif m.sentimental_score < 0 %>
+                        <div style="color: red; font-weight: bold;">
+                            <%= '%.2f' % m.sentimental_score %>
+                        </div>
+                      <% else %>
+                        <div style="color: green; font-weight: bold;">
+                            <%= '%.2f' % m.sentimental_score %>
+                        </div>
+                      <% end %>
+                  </td>
+              </tr>
+            <% end %>
+        </tbody>
+
+
+
+        <tfoot class="full-width">
+            <tr>
+                <th colspan="7"></th>
+
+                <th>
+                    <div class="custom-center">
+                        <%= link_to_previous_page @messages, '<i class="icon left arrow"></i>'.html_safe, class: 'ui small icon button' %>
+                          <%= link_to_next_page @messages, '<i class="icon right arrow"></i>'.html_safe, class: 'ui small icon button' %>
+                        </div>
+
+                        <div class="custom-text-center" style="font-size: 80%; color: grey; border-top: 1px solid #eee; margin-top: 10px;">
+                            Página <b style="font-size: 140%;"><%= @messages.current_page %></b> de <%= @messages.total_pages %>
+                            <br/>
+                            <%= @messages.total_count %> Registros
+                        </div>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>

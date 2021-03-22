@@ -1,0 +1,236 @@
+<script>
+  function downloadCSV(csv, filename) {
+      var csvFile;
+      var downloadLink;
+
+      // CSV file
+      // csvFile = new Blob([csv], {type: "text/csv"});
+      csvFile = new Blob(["\ufeff", csv]);
+
+      // Download link
+      downloadLink = document.createElement("a");
+
+      // File name
+      downloadLink.download = filename;
+
+      // Create a link to the file
+      downloadLink.href = window.URL.createObjectURL(csvFile);
+
+      // Hide download link
+      downloadLink.style.display = "none";
+
+      // Add the link to DOM
+      document.body.appendChild(downloadLink);
+
+      // Click download link
+      downloadLink.click();
+  }
+
+  function exportTableToCSV(filename) {
+      var csv = [];
+      var rows = document.querySelectorAll("table tr");
+
+      for (var i = 0; i < rows.length; i++) {
+          var row = [], cols = rows[i].querySelectorAll("td, th");
+
+          for (var j = 0; j < cols.length; j++)
+              row.push(cols[j].innerText);
+
+          csv.push(row.join(";"));
+      }
+
+      // Download CSV file
+      downloadCSV(csv.join("\n"), filename);
+  }
+  
+  $(document).ready(function(){
+      var d = new Date();
+      var month = d.getMonth() + 1;
+      var day = d.getDate();
+      var hours = d.getHours();
+      var minutes = d.getMinutes();
+      var date_str = d.getFullYear() + '-' +
+              (month < 10 ? '0' : '') + month + '-' +
+              (day < 10 ? '0' : '') + day + ' ' +
+              hours + 'h' + minutes + 'm'
+
+      exportTableToCSV('Rechat - Relatório de Usuários Completo ' + date_str + '.csv');
+      window.close();
+  });
+</script>
+
+<table>
+    <thead>
+        <tr>
+            <th>Usuário</th>
+            <th>Registro</th>
+            <th>Online no App</th>
+            <th>Tipo</th>
+            <th>Nome</th>
+            <th>Senha</th>
+            <th>Tipo Contato:Nome:Número de acessos</th>
+
+            <th>Mensagens Recebidas</th>
+            <th>Polaridade Mensagens Recebidas</th>
+            <th>Mensagens Enviadas</th>
+            <th>Polaridade Mensagens Enviadas</th>
+            <th>Compartilhamentos</th>
+            <th>Favoritas</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @users.each do |i| %>
+          <tr>
+
+              <!-- usuario -->
+              <td>
+                  <%= i.name %>
+              </td>
+
+              <!-- usuario -->
+              <td>
+                  <%= i.created_at.in_time_zone('America/Sao_Paulo').strftime('%d/%m/%Y %H:%M') %>
+              </td>
+
+              <!-- online no app -->
+              <td style="text-align: center;">
+                  <% if i.chat_connected %>
+                    Sim
+                  <% else %>
+                    Não
+                  <% end %>
+              </td>
+
+              <!-- tipo -->
+              <td>
+                  <% if i.type_acronym_id == 200 %>
+                    Pesquisador
+                  <% else %>
+                    Voluntário
+                  <% end %>
+              </td>
+
+              <!-- nome -->
+              <td>
+                  <% if i.entity_name %>
+                    <%= i.entity_name %>
+                  <% else %>
+                    Não informado
+                  <% end %>
+              </td>
+
+              <!-- senha -->
+              <td>
+                  <%= i.password %>
+              </td>
+
+
+
+
+
+
+
+              <!-- tipo contato:nome:numero de acessos -->
+              <td>
+                  <% if i.type_acronym_id == 200 %>
+                    Pesquisador não possui dados
+                  <% else %>
+                    <% i.contacts.each_with_index  do |c, j| %>
+                      <%
+                      s = Acronym.select(:name).find(c.type_acronym_id).name
+                      s = "#{s}:#{c.name}:#{c.count_views}|"
+                    %>
+
+                      <% if j == i.contacts.size - 1 %>
+                        <%= s[0..-2] %>
+                      <% else %>
+                        <%= s[0..-1] %>
+                      <% end %>
+                    <% end %>
+                  <% end %>
+              </td>
+
+
+              <!-- recebidas -->
+              <% count_messages_received = Message.sql("SELECT count(*) FROM messages WHERE destiny_user_id = #{i.id}").first['count(*)'] %>
+
+              <!-- Mensagens Recebidas -->
+              <td>
+                  <% if i.type_acronym_id == 200 %>
+                    Pesquisador não possui dados
+                  <% else %>
+                    <%= count_messages_received %>
+                  <% end %>
+              </td>
+
+              <!-- Polaridade Mensagens Recebidas -->
+              <td>
+                  <% if count_messages_received > 0 %>
+                    <% polarity_received = Message.sql("SELECT sum(sentimental_score) FROM messages WHERE destiny_user_id = #{i.id}").first['sum(sentimental_score)']
+
+                    if (polarity_received != nil)
+                      polarity_received = polarity_received / count_messages_received
+                      else
+                      polarity_received = 0
+                      end
+                  %>
+                    <%= '%.2f' % polarity_received %>
+                  <% else %>
+                    --
+                  <% end %>
+              </td>
+
+
+              <!-- enviadas -->
+              <%  count_messages_send = Message.sql("SELECT count(*) FROM messages WHERE origin_user_id = #{i.id}").first['count(*)'] %>
+
+              <!-- mensagens enviadas -->
+              <td>
+                  <% if i.type_acronym_id == 200 %>
+                    Pesquisador não possui dados
+                  <% else %>
+                    <%= count_messages_send %>
+                  <% end %>
+              </td>
+
+              <!-- polaridade mensagens enviadas -->
+              <td>
+                  <% if count_messages_send > 0 %>
+                    <%
+
+                    polarity_send = Message.sql("SELECT sum(sentimental_score) FROM messages WHERE origin_user_id = #{i.id}").first['sum(sentimental_score)']
+
+                    if (polarity_send != nil)
+                      polarity_send = polarity_send / count_messages_send
+                      else
+                      polarity_send = 0
+                      end
+                  %>
+                    <%= '%.2f' % polarity_send %>
+                  <% else %>
+                    --
+                  <% end %>
+              </td>
+
+              <!-- Compartilhamentos -->
+              <td>
+                  <% if count_messages_received > 0 %>
+                    <%= Message.sql("SELECT count(*) FROM message_shares WHERE user_id = #{i.id};").first['count(*)'] %>
+                  <% else %>
+                    0
+                  <% end %>
+              </td>
+
+              <!-- Favoritas -->
+              <td>
+                  <% if count_messages_received > 0 %>
+                    <%= Message.select('count(*)').where(destiny_user_id: i.id).where(favorited: true).first['count(*)'] %>
+                  <% else %>
+                    0
+                  <% end %>
+              </td>
+          </tr>
+        <% end %>
+    </tbody>
+</table>

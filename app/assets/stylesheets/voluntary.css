@@ -1,0 +1,165 @@
+.ws-contact {
+    display: table;
+    width: 100%;
+    max-width: 550px;
+    margin: 0px auto;
+}
+
+.ws-menu {
+    background: #2185d0;
+    color: white;
+    padding: 16px 0;
+
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    z-index: 999 !important;
+}
+
+.ws-menu-column-1,
+.ws-menu-column-2 {
+    position: relative !important;
+    display: table-cell !important;
+    vertical-align: middle;
+}
+
+.ws-menu-column-1 {
+    width: 25% !important;
+}
+
+.ws-menu-column-2 {
+    font-size: 16px !important;
+    width: 85% !important;
+    font-size: 17px; font-weight: 600 !important; letter-spacing: 1px; border: 0px !important;
+}
+
+
+
+
+
+#content-visible {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+}
+
+
+.ws-container-contacts {
+    /*left: 0px;*/
+    width: 100%;
+    max-height: calc(100% - 65px) !important;
+    overflow: auto;
+}
+.ws-container-contacts a {
+    color: #333 !important;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px !important;
+}
+
+/*.ws-contact {
+    display: table;
+    width: 100%;
+    max-width: 550px;
+    margin: 0px auto;
+}*/
+
+.ws-contact-column-1,
+.ws-contact-column-2 {
+    position: relative !important;
+    display: table-cell !important;
+    vertical-align: middle;
+}
+
+.ws-contact-message {
+    color: grey;
+    margin-top: 3px;
+    font-size: 90%;
+    white-space: nowrap !important;
+    overflow: hidden  !important;
+    text-overflow: ellipsis  !important;
+}
+
+.ws-contact-column-1 {
+    padding: 5px 0;
+    width: 25% !important;
+}
+
+.ws-contact-column-2 {
+    width: 85% !important;
+    border-bottom: 1px solid #ddd;
+}
+
+a { color: inherit; } 
+a:active { color: inherit; } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ws-mobile-container-x {
+    display: table;
+    width: 100%;
+    max-width: 550px !important;
+    margin: 0px auto;
+}
+
+.ws-mobile-column-1,
+.ws-mobile-column-2 {
+    position: relative !important;
+    display: table-cell !important;
+    vertical-align: middle;
+}
+
+.ws-mobile-column-1 {
+    width: 25% !important;
+}
+.ws-mobile-column-2 {
+    width: 85% !important;
+}
+
+.ws-menu .ws-mobile-column-2 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 600 !important;
+}
+
+.ws-contact-active .ws-contact-message {
+    font-weight: 800;
+    color: #333 !important;
+}
+
+
+.ws-mobile-container-y {
+    width: 100%;
+    height: calc(100% - 65px) !important;
+    max-height: calc(100% - 65px) !important;
+    overflow: auto;
+}
+
+.ws-mobile-contact-item {
+    display: table;
+    width: 100%;
+}
+
+.ws-contacts a {
+    color: #333 !important;
+}
+
+.ws-contacts .ws-mobile-column-2 {
+    border-bottom: 1px solid #ddd;
+}

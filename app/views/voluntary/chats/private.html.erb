@@ -1,0 +1,226 @@
+<%= render 'menu_user' %>
+<style>
+    body {
+        background-image: url('/assets/telegram_background.jpg');
+        background-size: 100% 100%;
+        background-repeat: repeat;
+    }
+
+    .ws-messages {
+        max-height: calc(100% - 115px) !important;
+    }
+
+    .ws-message {
+        position: relative;
+        display: table;
+        width: 100%;
+    }
+
+    .ws-message-left,
+    .ws-message-right {
+        display: table;
+        max-width: 80%;
+        padding: 5px 10px;
+        background: white;
+        border-radius: 8px;
+        margin: 2px 15px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        position: relative;
+    }
+
+    .ws-message-left {
+        float: left;
+    }
+
+    .ws-message-right {
+        float: right;
+        background-color: #effedd;
+    }
+
+
+    .ws-send-message-painel {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        padding: 3px 5px;
+    }
+    .ws-send-message-painel .ui.search {
+        float: left; width: calc(100% - 55px)
+    }
+    .ws-send-message-painel .ui.search input {
+        width: 100%; padding: 15px; border: 0px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    .ws-send-message-painel .ui.button {
+        float: right;
+        padding: 12px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+
+<%#*.scroll-item {%>
+<%#*background-color: blue !important;%>
+<%#*}%>
+<%#*.scroll-item.is-active {%>
+<%#*background-color: #0e8824 !important;%>
+<%#*}%>
+</style>
+
+
+<div class="ws-mobile-container-y ws-messages">
+    <div id="messages" class="ws-mobile-container-x ws-behavior-messages">
+
+        <div class="ws-message messages" style="margin: 25px 0;">
+            <div class="ws-message-left ws-behavior-message" style="float: none; margin: 0px auto; background-color: #faebcc">
+                Aqui é o início da conversa
+            </div>
+        </div>
+
+        <% Message.where("(origin_user_id = #{session[:user]['id']} OR destiny_user_id = #{session[:user]['id']}) AND (contact_id = '#{params[:contact_id]}')").order(id: :desc).limit(30).reverse.each do |m| %>
+          <div class="sub-message" id="<%= m.id %>">
+              <%= render partial: 'message', locals: {message: m} %>
+          </div>
+        <% end %>
+    </div>
+</div>
+
+
+<div class="ws-send-message-painel">
+    <div class="ws-mobile-container-x">
+        <div class="ui search" >
+            <input class="prompt behavior-input-type-message" type="text" placeholder="Digite uma mensagem..." autofocus="autofocus" />
+        </div>
+
+        <div class="ui button icon circular blue shadow-button behavior-button-send-message">
+            <span class="material-icons">send</span>
+        </div>
+    </div>
+</div>
+
+<script>
+  (function ($) {
+      $.fn.hasScrollBar = function () {
+          return this.get(0).scrollHeight > this.height();
+      }
+  })(jQuery);
+
+  ORIGIN_CONTACT_ID = <%= params[:contact_id].to_i %>;
+
+  function capture_interaction_start() {
+      var time;
+
+      $('.scroll-item').each(function (i) {
+          var child_start = $(this).offset().top;
+          var child_middle = $(this).height() / 2;
+          var id = $('[message-id]', $(this)).attr('message-id');
+
+          if (!(id in total_times))
+              total_times[id] = 0;
+
+          if (
+                  ((child_start + child_middle) >= container_start) // comparar top do container
+                  && ((child_start + child_middle) <= container_end) // comparar bot do container
+                  ) {
+
+              // verificar se já nao estava ativo
+              if (!$(this).hasClass('is-active')) {
+
+                  // iniciar tempo do foco atual
+                  times[id] = new Date();
+
+                  $(this).addClass('is-active');
+              }
+
+          } else {
+              // verificar se estava ativo de fato
+              if ($(this).hasClass('is-active')) {
+                  time = ((new Date()) - times[id]) / 1000;
+                  total_times[id] = total_times[id] + time;
+
+                  //l(id + ': TEMPO VISUALIZADO: ' + total_times[id]);
+
+                  // zerar tempo do foco atua
+                  times[id] = 0;
+
+                  $(this).removeClass('is-active');
+              }
+          }
+      });
+  }
+
+  function end_times() {
+      $.each(times, function (id, value) {
+          // todo tempo de foco menor que 0.1ms sera ignorado
+          // ninguém le uma mensagem tao rapido, foi apenas um scroll
+          if (value >= 0.5) {
+              var time = ((new Date()) - times[id]) / 1000;
+              total_times[id] = parseFloat(total_times[id] + time);
+          } else {
+              total_times[id] = 0;
+          }
+      });
+  }
+
+  var total_times = {};
+  var times = {};
+  var container_start = $('.ws-mobile-container-y').position().top;
+  var container_end = container_start + $('.ws-mobile-container-y').height();
+
+
+  $(document).ready(function () {
+      CONTACT_ID = <%= params[:contact_id] %>;
+      PAGE_SCROLL_COUNT = 0;
+
+      capture_interaction_start();
+      scroll();
+
+      $('.ws-mobile-container-y').scroll(function () {
+          capture_interaction_start();
+          PAGE_SCROLL_COUNT++;
+      });
+  });
+
+  function end_times_and_submit() {
+      end_times();
+
+      if (total_times != {}) {
+          angular_controller('GlobalController').save_times(total_times);
+      }
+  }
+
+  window.onbeforeunload = function () {
+      end_times_and_submit();
+  };
+</script>
+
+<div class="ui modal ws-behavior-modal-share">
+    <i class="close icon"></i>
+    <div class="header">
+        Compartilhar
+    </div>
+
+    <div class="content">
+        <% Contact.where(user_id: session[:user]['id']).each do |c| %>
+
+          <div class="ui checkbox" style="padding: 10px;">
+              <input type="checkbox" name="contacts_ids[<%= c.id %>]" ng-model="contacts_ids[<%= c.id %>]" />
+              <label><%= c.name %></label>
+          </div>
+
+          <div class="ui divider fitted"></div>
+        <% end %>
+    </div>
+
+    <div class="actions">
+        <div class="ui deny button">
+            Cancelar
+        </div>
+
+        <div class="ui blue button" ng-click="message_share(contacts_ids, share)">
+            Compartilhar
+        </div>
+    </div>
+</div>

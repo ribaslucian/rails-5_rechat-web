@@ -1,0 +1,81 @@
+<%= form_with model: @interaction, method: :POST, url: researcher_interactions_path, local: true, class: 'ui form' do |f| %>
+
+    <div id='fields' class="ui three columns grid centered">
+        <div class="column">
+            <div class="field">
+                <%= f.label :name, 'Título:' %>
+                <%= f.text_field :name, autofocus: 'autofocus' %>
+            </div>
+
+            <br/>
+            <div class="ui divider fitted"></div>
+            <br/>
+
+            <div class="field disabled">
+                <label>Programação:</label>
+
+                <p style="font-size: 90%;">
+                    A programação se tornará uma lista adicionável como as mensagens do bot.
+                    Mas nessa versão será disponibilizado apenas a opção "Diária".
+                </p>
+
+                <input value="Diário" disabled />
+            </div>
+
+            <div class="field disabled">
+                <%= f.label :number_schedule, 'Horários (de 00 até 23):' %>
+
+                <p style="font-size: 90%; color: grey;">
+                    Nessa versão é possível efetuar um agendamento
+                    somente para uma horá específica, válida todo dia.
+                </p>
+
+                <%= f.text_field :number_schedule, value: '13' %>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui segment very padded basic">
+        <h3 class="ui header">
+            <b>Mensagens</b>
+        </h3>
+
+        <div class="ui divider fitted"></div>
+        <br/>
+
+        <div id="messages" ng-init="field = 0">
+            <%= f.fields_for :messages do |message| %>
+              <%= render 'message_fields', f: message %>
+            <% end %>
+
+            <div class="links" style="width: 11%; margin-top: 30px;">
+                <%=
+                link_to_add_association 'Adicionar',
+                  f, :messages,
+                  class: 'ui button blue ws-center',
+                  'ng-click': 'field = field + 1'
+                %>
+              </div>
+          </div>
+
+          <br/>
+          <br/>
+          <div class="ui divider fitted"></div>
+          <br/>
+
+          <button class="ui huge button ws-center black">
+              Salvar
+          </button>
+
+      </div>
+
+      <script>
+        $('#messages').bind('cocoon:before-insert', function (e, item) {
+            var childScope = angular_scope().$new();
+            
+            childScope.indx = angular_scope().field+1;
+            angular_app().$compile(item)(childScope);
+        });
+      </script>
+
+    <% end %>

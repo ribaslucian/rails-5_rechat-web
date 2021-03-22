@@ -1,0 +1,31 @@
+<br/>
+<br/>
+
+<div align="center">
+    <div id="messages">
+        <%= render @messages %>
+    </div>
+
+    <br/>
+
+    <div>
+        <input id="destiny_user_id" type="text" placeholder="ID do Usuário" />
+    </div>
+
+    <div>
+        <input type="text" placeholder="Mensagem" data-behavior="chat_speaker" />
+    </div>
+
+    <br/>
+</div>
+
+<!--
+inscricao
+cable.js > chats.js#3 > chat_channel.rb#1
+
+envio
+chat.js#1 > chat.js#2 > chat_channel.rb#1 > message.rb#1 > chat_broadcast_job.rb#1
+
+resposta
+chat.js#1 > chat.js#2 > chat_channel.rb#1 > message.rb#1 > chat_broadcast_job.rb#1
+-->

@@ -1,0 +1,60 @@
+<%
+if f.index.to_s.length > 1
+  required = false
+  else
+  required = true
+  end
+%>
+
+
+<% if required %>
+
+
+  <div class="nested-fields">
+      <div class="two fields">
+
+            <div class="field">
+                <label>* Tipo:</label>
+
+                <%= f.select :type_acronym_id,
+                  options_for_select(
+                  Acronym.select(:id, :name).where(data_refer: 'contacts.type').map { |a| [a.name, a.id] },
+                  f.object.type_acronym_id
+                  ) %>
+            </div>
+
+            <div class="field">
+                <%= f.label :name, 'Nome:' %>
+                <%= f.text_field :name, required: required %>
+            </div>
+        </div>
+    </div>
+
+
+  <% else %>
+    <div class="nested-fields">
+        <div class="three fields">
+            <div class="field" style="padding-top: 23px;">
+                <%= link_to_remove_association f, class: 'ui button icon ws-center' do %>
+                    <i class="icon delete"></i>
+                  <% end %>
+              </div>
+
+              <div class="field">
+                  <label>* Tipo:</label>
+
+                  <%= f.select :type_acronym_id,
+                    options_for_select(
+                    Acronym.select(:id, :name).where(data_refer: 'contacts.type').map { |a| [a.name, a.id] },
+                    f.object.type_acronym_id
+                    ) %>
+              </div>
+
+              <div class="field">
+                  <%= f.label :name, 'Nome:' %>
+                  <%= f.text_field :name, required: required %>
+              </div>
+          </div>
+      </div>
+    <% end %>
+

@@ -1,0 +1,22 @@
+<% if flash[:black][:content] %>
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $.toast({
+            heading: '<%= flash[:black][:title] %>',
+            text: '<%= flash[:black][:content] %>',
+            position: 'top-center',
+            hideAfter: 5000,
+            loaderBg: '#666'
+                    // icon: 'warning',
+                    // showHideTransition: 'fade',
+                    // bgColor: '#fffaf3',
+                    // textColor: '#8e6628',
+                    // loaderBg: '#c9ba9b'
+                    // allowToastClose: true
+        });
+    })
+  </script>
+
+  <% flash[:black] = nil %>
+
+<% end %>

@@ -1,0 +1,75 @@
+<div message-id="<%= message.id %>">
+    
+    <% if message.type_content_acronym_id == 50 %>
+      <%= message.content.gsub(/\R+/, '<br/>').html_safe %>
+    <% end %>
+
+    <% if message.type_content_acronym_id == 51 %>
+      <img src="<%= message.content %>" width="100%" style="border-radius: 6px; position: relative; bottom: -2px;" />
+    <% end %>
+
+    <% if message.type_content_acronym_id == 52 %>
+      <iframe width="100%" src="<%= message.content %>"></iframe>
+    <% end %>
+
+    <% if message.type_content_acronym_id == 53 %>
+      [renderizando áudio]
+    <% end %>
+
+    <% if message.origin_user_id == 0 %>  
+
+      <%#*<div class="ui dropdown icon large"style="position: absolute; top: -6px; right: -2px">%>
+      <div class="ui icon bottom right pointing dropdown"style="position: absolute; top: -6px; right: -2px; z-index: 999 !important;">
+          <i click-behavior class="sort down icon small" style="color: #ddd" onclick="$(this).parents('.dropdown').dropdown()"></i>
+
+          <div
+              class="menu shadow-button"
+              style="bottom: 6px !important; right: -9px !important;"
+              ng-init="
+                    $app.messages[<%= message.id %>].favorited = <%= message.favorited == true ? 'true' : 'false' %>;
+              ">
+
+              <div
+                  class="item"
+                  ng-click="message_star(<%= message.id %>)"
+                  ng-if="!$app.messages[<%= message.id %>].favorited">
+
+                  <i class="icon star grey"></i>
+                  Favoritar
+              </div>
+
+              <div
+                  class="item"
+                  ng-click="message_unstar(<%= message.id %>)"
+                  ng-if="$app.messages[<%= message.id %>].favorited">
+
+                  <i class="icon star outline grey"></i>
+                  Remover das Favoritas
+              </div>
+              
+              
+              <%#*content: params['content'],%>
+              <%#*interaction_ids: params['interaction_ids'],%>
+              <%#*type_content_acronym_id: params['type_content_acronym_id'],%>
+              <%#*interaction_id: params['reference_interaction_id'],%>
+
+              <div
+                  class="item"
+                  ng-click="
+                    share.interaction_id = <%= message.interaction_id ? message.interaction_id : 0 %>;
+                    share.propagation_message_id = <%= message.id ? message.id : 0 %>;
+                    share.interaction_message_id = <%= message.interaction_ids ? message.interaction_ids : 0 %>;
+                    
+                    share.content = '<%= message.content ? message.content : 0 %>';
+                    share.interaction_ids = <%= message.interaction_ids ? message.interaction_ids : 0 %>;
+                    share.type_content_acronym_id = <%= message.type_content_acronym_id ? message.type_content_acronym_id : 0 %>;
+                    share.reference_interaction_id = <%= message.reference_interaction_id ? message.reference_interaction_id : 0 %>;
+                  "
+                  onclick="$('.ws-behavior-modal-share').modal('show')">
+                  <i class="icon share grey"></i>
+                  Compartilhar
+              </div>
+          </div>
+      </div>
+    <% end %>  
+</div>

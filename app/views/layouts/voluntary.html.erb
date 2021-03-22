@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ReChat</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+
+        <%= stylesheet_link_tag 'application', media: 'all' %>
+
+        <%= javascript_include_tag 'application' %>
+
+        <style>
+            *:not(.icon):not(.material-icons) {
+                font-family: 'Roboto', sans-serif !important;
+            }
+
+            .ws-message.messages:active {
+                background: #b2cee3 !important;
+            }
+        </style>
+    </head>
+
+    <body ng-app="ChatResearcher" ng-controller="GlobalController">
+        <%= render "layouts/menus/voluntary" %>
+
+        <%= yield %>
+
+        <%= render 'layouts/alerts/alerts' %>
+        <%= render 'layouts/partials/loading' %>
+
+        <script>
+          $(document).ready(function () {
+              SESSION_USER_ID = <%= session[:user]['id'] %>;
+              connect(<%= session[:user]['id'] %>)
+          });
+        </script>
+        
+        <%#*<div ng-init="message_star(1)"></div>%>
+        
+        <%#*<div ng-init="%>
+          <%#*$app.$entity.load('contacts', {%>
+            <%#*$reload: true,%>
+            <%#*$conclude: success,%>
+            <%#*'Contact': {%>
+              <%#*all: ''%>
+            <%#*}%>
+          <%#*});%>
+        <%#*"></div>%>
+
+        <%#*{{$app.data['ws']['contacts']}}%>
+        
+    </body>
+</html>

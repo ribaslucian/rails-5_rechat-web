@@ -1,0 +1,143 @@
+<br/><br/>
+
+<style>
+    body {
+        background-color: #333;
+    }
+
+    .ui.basic.segment {
+        border-radius: 8px;
+    }
+
+    input {
+        padding: 15px !important;
+    }
+</style>
+
+
+<div class="ui middle aligned center aligned three column grid stackable">
+    <div class="column">
+
+
+
+
+        <div class="ui attached bottom very padded segment" style=" position: relative; border-radius: 8px 8px 0 0; border: 0px !important; margin-top: 0px !important;">
+
+<%#*<div class="ws-center" style="border-radius: 100%; padding: 18px 20px 14px 20px; background: #e6c131;">%>
+<%#= image_tag 'researcher (6).png', width: 60 %>
+<%#*</div>%>
+
+            <div class="ws-center-absolute-xy" style="top: 0px;">
+
+                <%= image_tag 'rechat_icons/(3).png', width: 130 %>
+            </div>
+
+            <br/>
+            <br/>
+
+            <h1 class="ws-font-poppins" style="margin-top: 15px; font-size: 24px !important; font-weight: 800 !important;">
+                ReChat
+            </h1>
+
+            <br/>
+
+            <%= form_with url: '/guest/users/login', id: 'form-login', class: 'ui large form', local: true do%>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="user icon"></i>
+                        <input id="user-name" type="text" name="user[name]" placeholder="Nome de usuário" autofocus="autofocus" />
+                    </div>
+                </div>
+
+                <br/>
+
+                <button class="ui big center blue button" type="submit">
+                    Entrar
+                    <i class="icon arrow right"></i>
+                </button>
+              <% end %>
+          </div>
+
+          <div class="ws-message-success-bottom">
+              <i class="info icon"></i>
+              Ainda não é usuário ?
+
+              &nbsp;
+
+              <a href="<%= guest_sign_in_path %>">
+                  <b>Cadastre-se Agora</b>
+              </a>
+          </div>
+
+
+          <br/>
+          <div class="ws-center" style="color: grey; cursor: pointer;" onclick="$('.ws-behavior-modal-rechat').modal('show')">
+              Sobre o Rechat
+          </div>
+      </div>
+  </div>
+
+  <br/>
+
+  <style>
+      .ws-message-success-bottom {
+          border-radius: 0 0 8px 8px;
+          color: #1a531b;
+          background: #f2f8e3;
+          padding: 15px 20px;
+          border: 2px solid #f2f8e3;
+          width: calc(100% + 2px);
+          margin-left: -1px;
+          margin-top: -1px;
+      }
+  </style>
+
+  <script>
+    $(document).ready(function () {
+        $('#form-login').submit(function () {
+            if ($('#user-name').val() != 'ppgca' && !isMobile()) {
+                $.toast({
+                    text: '\
+        Para acessar o chat utilize a versão Mobile (Aplicativo Android).\n\
+        <br/><br/> Baixe o aplicativo \n\
+        <a target="_blank" style="color: #bce8f1;" href="https://github.com/ribaslucian/whatsapp-researcher-androidapp/blob/master/Rechat.apk">clicando aqui.</a>',
+                    position: 'top-center',
+                    hideAfter: 5000,
+                    loaderBg: '#666'
+                });
+                return false;
+            }
+        });
+    })
+  </script>
+
+
+
+  <div class="ui basic modal ws-behavior-modal-rechat" style="text-align: center;">
+      <div class="ui icon header">
+          Rechat Pesquisa em Chats
+      </div>
+      
+      <div class="content">
+          <p>
+              A plataforma Rechat é um projeto com objetivo de estudar
+              comportamentos em aplicativos de conversa. Considerando a 
+              integridade dos voluntários, os dados capturados são enviados
+              de maneira anônima, também , não há coleta externa a plataforma,
+              ou seja, seu celular não está sendo monitorado.
+          </p>
+          
+          <br/>
+      </div>
+      
+      <div class="actions">
+          <div class="ui red basic cancel inverted button">
+              Ok
+          </div>
+          
+          <div class="ui green ok inverted button">
+              <i class="checkmark icon"></i>
+              Entendi
+          </div>
+      </div>
+  </div>

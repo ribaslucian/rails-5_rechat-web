@@ -1,0 +1,17 @@
+<%
+_class = ''
+last_message = Message
+.where(contact_id: message.contact_id)
+.where("id < #{message.id}")
+.order(id: :desc).limit(1).first()
+
+if last_message && (last_message.destiny_user_id != message.destiny_user_id)
+  _class = 'style="margin-top: 6px !important;"'
+end
+%>
+
+<div class="ws-message messages" <%= _class.html_safe %>>
+    <div class="ws-message-left ws-behavior-message scroll-item">
+        <%= render partial: 'researcher/messages/message_raw', locals: {message: message} %>
+    </div>
+</div>

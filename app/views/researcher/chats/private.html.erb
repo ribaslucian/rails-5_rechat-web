@@ -1,0 +1,111 @@
+<style>
+    body {
+        background-image: url('/assets/telegram_background.jpg');
+        background-size: 100% 100%;
+        background-repeat: repeat;
+    }
+
+    .ws-messages {
+        max-height: calc(100% - 115px) !important;
+    }
+
+    .ws-message {
+        position: relative;
+        display: table;
+        width: 100%;
+    }
+
+    .ws-message-left,
+    .ws-message-right {
+        display: table;
+        max-width: 80%;
+        padding: 5px 10px;
+        background: white;
+        border-radius: 8px;
+        margin: 2px 15px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        position: relative;
+    }
+
+    .ws-message-left {
+        float: left;
+    }
+
+    .ws-message-right {
+        float: right;
+        background-color: #effedd;
+    }
+
+
+    .ws-send-message-painel {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        padding: 3px 5px;
+    }
+    .ws-send-message-painel .ui.search {
+        float: left; width: calc(100% - 55px)
+    }
+    .ws-send-message-painel .ui.search input {
+        width: 100%; padding: 15px; border: 0px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    .ws-send-message-painel .ui.button {
+        float: right;
+        padding: 12px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+</style>
+
+<div class="ws-mobile-container-y ws-messages">
+
+    <div class="ws-mobile-container-x ws-behavior-messages">
+
+        <br/>
+
+        <div class="ui form">
+            <div class="field">
+                <label>Enviando mensagem pelo Contato:</label>
+
+                <select class="ui dropdown">
+                    <% Contact.where(user_id: params[:user_id]).each do |c| %>
+                      <option value="<%= c.id %>"><%= c.name %></option>
+                    <% end %>
+                </select>
+            </div>
+        </div>
+
+
+        <br/>
+
+        <% last_side = current_side = nil %>
+        <% Message.where("origin_user_id = #{session[:user]['id']} OR destiny_user_id = #{session[:user]['id']}").order(:created).each do |m| %>
+
+          <% current_side = m.origin_user_id == session[:user]['id'] ? 'right' : 'left' %>
+
+          <%= '<div style="padding: 4px;"></div>'.html_safe if current_side != last_side %>
+
+          <%= render partial: 'message', locals: {message: m} %>
+
+          <% last_side = current_side %>
+        <% end %>
+    </div>
+</div>
+
+
+<div class="ws-send-message-painel">
+    <div class="ws-mobile-container-x">
+        <div class="ui search" >
+            <input class="prompt behavior-input-type-message" type="text" placeholder="Digite uma mensagem..." autofocus="autofocus" />
+        </div>
+
+        <div class="ui button icon circular blue shadow-button behavior-button-send-message">
+            <span class="material-icons">send</span>
+        </div>
+    </div>
+</div>
+
+

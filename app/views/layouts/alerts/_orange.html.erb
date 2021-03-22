@@ -1,0 +1,21 @@
+<% if !flash[:orange].nil? %>
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $.toast({
+            text: '<%= flash[:orange] %>',
+            position: 'top-center',
+            hideAfter: 5000,
+            loaderBg: '#777',
+            // icon: 'warning',
+            // showHideTransition: 'fade',
+            bgColor: '#f2711c',
+            textColor: 'white',
+            // loaderBg: '#c9ba9b'
+            // allowToastClose: true
+        });
+    })
+  </script>
+
+  <% flash[:orange] = nil %>
+
+<% end %>
