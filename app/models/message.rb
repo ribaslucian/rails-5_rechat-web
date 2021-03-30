@@ -183,7 +183,7 @@ class Message < ApplicationRecord
   def calc_sentimental
     # ser texto e nao ser [aguardar resposta]
     if self.type_content_acronym_id == 50 && self.type_acronym_id != 5
-      self.sentimental_score = %x(python scripts/polarity.py "#{self.content}")
+      self.sentimental_score = %x(python scripts/polarity2.py "#{self.content}")
     end
     
     

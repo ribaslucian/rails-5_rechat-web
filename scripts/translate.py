@@ -1,6 +1,7 @@
 # example
 # $ pip install googletrans
 # py translate.py "Nao estou muito bem."
+# py scripts/translate.py "Nao estou muito bem."
 
 import sys
 from googletrans import Translator

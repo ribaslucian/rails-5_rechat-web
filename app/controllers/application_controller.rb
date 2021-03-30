@@ -8,6 +8,8 @@ class ApplicationController < ActionController::Base
 
   def logged?
     
+#    return d (%x(python scripts/polarity2.py "Minha nossa o que está acontecendo?"))
+    
 #    results = Message.select('count(*)')
 #      .where(destiny_user_id: 2)
 #      .where(favorited: true)
