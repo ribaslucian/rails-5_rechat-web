@@ -69,5 +69,9 @@ class Api::AuthorizersController < ApplicationController
 
     return render json: results, include: include
   end
+  
+  def get_notification
+    return d Message.get_notification
+  end
 
 end

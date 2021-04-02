@@ -287,4 +287,11 @@ class Message < ApplicationRecord
     
     return params
   end
+  
+  def self.get_notification
+    return {
+      title: 'Contato XYZ',
+      content: 'Essa é a notificação',
+    }
+  end
 end
