@@ -43,7 +43,7 @@ Rails.application.routes.draw do
   
   namespace :api, defaults: { format: :json } do
     post 'authorize' => 'authorizers#authorize'
-    get 'get_notification' => 'authorizers#get_notification'
+    get 'get_notification/:user_id' => 'authorizers#get_notification'
   end
 end
 

@@ -288,10 +288,19 @@ class Message < ApplicationRecord
     return params
   end
   
-  def self.get_notification
+  def self.get_notification params
+    m = Message
+    .where(destiny_user_id: params[:user_id])
+    .where('interaction_id IS NOT NULL')
+    .where('count_views = 0')
+    .order('id desc')
+    .limit(1)
+    .first()
+    
     return {
       title: 'Contato XYZ',
       content: 'Essa é a notificação',
+      params: m
     }
   end
 end

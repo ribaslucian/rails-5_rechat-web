@@ -71,7 +71,8 @@ class Api::AuthorizersController < ApplicationController
   end
   
   def get_notification
-    return d Message.get_notification
+#    return d Message.get_notification params
+    return d session
   end
 
 end

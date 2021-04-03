@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   end
 
   def logged?
+#    return d Message.all
     
 #    return d (%x(python scripts/polarity2.py "Minha nossa o que está acontecendo?"))
     
