@@ -2,7 +2,7 @@ class Message < ApplicationRecord
   # 1
   after_create_commit { broadcast_if_raw_message }
   after_create :start_interaction
-#   before_save :translate_and_calc_sentimental
+  #   before_save :translate_and_calc_sentimental
   before_save :calc_sentimental
   
   belongs_to :interaction, optional: true
@@ -91,12 +91,12 @@ class Message < ApplicationRecord
           reference_interaction_id: last_message.interaction_id
         })
       
-#      # verificar se a mensagem eh a ultima da interacao para setar seu status como concluida
-#      if m.id == last_message_interaction.id
-#        i = Interaction.select(:id, :status_acronym_id).find(m.interaction_id)
-#        i.status_acronym_id = 651
-#        i.save!
-#      end
+      #      # verificar se a mensagem eh a ultima da interacao para setar seu status como concluida
+      #      if m.id == last_message_interaction.id
+      #        i = Interaction.select(:id, :status_acronym_id).find(m.interaction_id)
+      #        i.status_acronym_id = 651
+      #        i.save!
+      #      end
     end
       
     # atualizar a mensagem atual para informar a interacao em questao
@@ -203,21 +203,21 @@ class Message < ApplicationRecord
     end
   end
   
-#  def check_target_response
-#    # verificamos se eh uma mensagem enviado para o pesquisador
-#    if self.destiny_user_id == 0
-#      # obtemos a ultima mensagem de bot na conversa
-#      last_message = Message.where(
-#        destiny_user_id self.origin_user_id,
-#        contact_id: self.contact_id
-#      ).order(id: desc).limit(1).first
-#      
-#      # checar se mensagem eh alvo e atualizar tipo da resposta
-#      if last_message && last_message.type_acronym_id == 50
-#        self.type_acronym_id == 54
-#      end
-#    end
-#  end
+  #  def check_target_response
+  #    # verificamos se eh uma mensagem enviado para o pesquisador
+  #    if self.destiny_user_id == 0
+  #      # obtemos a ultima mensagem de bot na conversa
+  #      last_message = Message.where(
+  #        destiny_user_id self.origin_user_id,
+  #        contact_id: self.contact_id
+  #      ).order(id: desc).limit(1).first
+  #      
+  #      # checar se mensagem eh alvo e atualizar tipo da resposta
+  #      if last_message && last_message.type_acronym_id == 50
+  #        self.type_acronym_id == 54
+  #      end
+  #    end
+  #  end
 
   def self.seed_test
     Message.create!({
@@ -270,8 +270,8 @@ class Message < ApplicationRecord
               contact_id: params['origin_contact_id'],
               type_acronym_id: 6,
               
-#              interaction_message_id: params['interaction_message_id'],
-#              propagation_message_id: params['propagation_message_id'],
+              #              interaction_message_id: params['interaction_message_id'],
+              #              propagation_message_id: params['propagation_message_id'],
 
               # passar nos parametros
               content: params['content'],
@@ -293,14 +293,19 @@ class Message < ApplicationRecord
     .where(destiny_user_id: params[:user_id])
     .where('interaction_id IS NOT NULL')
     .where('count_views = 0')
+    .where('chat_open IS NULL OR chat_open IS FALSE')
     .order('id desc')
     .limit(1)
     .first()
     
+    if (!m)
+      return {notification: false}
+    end
+    
     return {
-      title: 'Contato XYZ',
-      content: 'Essa é a notificação',
-      params: m
+      notification: true,
+      contact: Contact.select(:name).find(m.contact_id).name,
+      content: m.content,
     }
   end
 end

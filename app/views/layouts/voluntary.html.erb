@@ -24,6 +24,9 @@
     </head>
 
     <body ng-app="ChatResearcher" ng-controller="GlobalController">
+
+        <div id="entity_id" style="display: none;" user-id="<%= session[:user]['id'] %>"></div>
+            
         <%= render "layouts/menus/voluntary" %>
 
         <%= yield %>

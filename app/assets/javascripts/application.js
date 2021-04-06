@@ -41,6 +41,8 @@ $(document).ready(function () {
     $('.ws-loading-global').fadeOut();
     
     $('.checkbox').checkbox();
+    
+    Android.setUserId(getUserId());
 });
 
 $(window).on('beforeunload', function () {

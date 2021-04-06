@@ -1,3 +1,13 @@
+
+function getUserId() {
+    var user_id = $('#entity_id').attr('user-id');
+    
+    if (user_id)
+        return user_id;
+    
+    return 0;
+}
+
 function l(log) {
     console.log(log);
 }
@@ -73,6 +83,6 @@ function isMobile() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         return true;
     }
-    
+
     return false;
 }
