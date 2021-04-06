@@ -4,7 +4,7 @@
 # $ pip install -U deep_translator
 
 import sys
-from googletrans import Translator
+# from googletrans import Translator
 from textblob import TextBlob
 
 from deep_translator import GoogleTranslator
