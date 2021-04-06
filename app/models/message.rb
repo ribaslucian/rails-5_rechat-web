@@ -293,7 +293,7 @@ class Message < ApplicationRecord
     .where(destiny_user_id: params[:user_id])
     .where('interaction_id IS NOT NULL')
     .where('count_views = 0')
-    .where('chat_open IS NULL OR chat_open IS FALSE')
+    .where('chat_open = NULL OR chat_open = FALSE')
     .order('id desc')
     .limit(1)
     .first()
