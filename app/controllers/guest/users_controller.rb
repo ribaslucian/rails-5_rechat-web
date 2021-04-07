@@ -4,7 +4,9 @@ class Guest::UsersController < Guest::GuestController
     
     if request.post?
       #      user = User.find_by(name: params[:user][:name], password: params[:user][:password])
-      user = User.find_by(name: params[:user][:name])
+      username = params[:user][:name].downcase
+      username = username.delete(' ')
+      user = User.find_by(name: username)
       
       if user
         session[:user] = user

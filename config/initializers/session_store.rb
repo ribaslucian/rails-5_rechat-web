@@ -1,1 +1,3 @@
-Rails.application.config.session_store :cookie_store, expire_after: 15.days
+Rails.application.config.session_store  :cookie_store,
+                                        :key => "rechat_session",
+                                        expire_after: 365.days
