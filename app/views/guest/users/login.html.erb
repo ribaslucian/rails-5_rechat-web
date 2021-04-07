@@ -41,11 +41,11 @@
 
             <br/>
 
-            <%= form_with url: '/guest/users/login', id: 'form-login', class: 'ui large form', local: true do%>
+            <%= form_with url: '/guest/users/login', id: 'form-login', class: 'ui large form', autocomplete: 'on', local: true do%>
                 <div class="field">
                     <div class="ui left icon input">
                         <i class="user icon"></i>
-                        <input id="user-name" type="text" name="user[name]" placeholder="Nome de usuário" autofocus="autofocus" />
+                        <input id="user-name" autocomplete="on" type="text" name="user[name]" placeholder="Nome de usuário" autofocus="autofocus" />
                     </div>
                 </div>
 
