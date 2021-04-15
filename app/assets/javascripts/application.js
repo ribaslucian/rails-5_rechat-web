@@ -36,13 +36,22 @@
 //= require semantic-ui
 
 $(document).ready(function () {
+
     $('.dropdown').dropdown();
     certer_content_visible();
     $('.ws-loading-global').fadeOut();
-    
+
     $('.checkbox').checkbox();
-    
-    Android.setUserId(getUserId());
+
+    if (typeof Android !== 'undefined') {
+        Android.setUserId(getUserId());
+    }
+
+    if (getUserId() != 0) {
+        if (typeof Android !== 'undefined') {
+            Android.login($('#rechat_session_cookie').attr('value'));
+        }
+    }
 });
 
 $(window).on('beforeunload', function () {
@@ -55,5 +64,11 @@ function certer_content_visible() {
 
     if (content_visible < body) {
         $('#content-center').addClass('ws-center-absolute-y')
+    }
+}
+
+function webview_logout() {
+    if (typeof Android !== 'undefined') {
+        Android.logout();
     }
 }

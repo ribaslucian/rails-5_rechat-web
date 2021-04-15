@@ -25,8 +25,10 @@
 
     <body ng-app="ChatResearcher" ng-controller="GlobalController">
 
+        <span id="rechat_session_cookie" value="<%= cookies['rechat_session'] %>" style="display: none;"></span>
+
         <div id="entity_id" style="display: none;" user-id="<%= session[:user]['id'] %>"></div>
-            
+
         <%= render "layouts/menus/voluntary" %>
 
         <%= yield %>
@@ -40,20 +42,20 @@
               connect(<%= session[:user]['id'] %>)
           });
         </script>
-        
-        <%#*<div ng-init="message_star(1)"></div>%>
-        
-        <%#*<div ng-init="%>
-          <%#*$app.$entity.load('contacts', {%>
-            <%#*$reload: true,%>
-            <%#*$conclude: success,%>
-            <%#*'Contact': {%>
-              <%#*all: ''%>
-            <%#*}%>
-          <%#*});%>
-        <%#*"></div>%>
 
-        <%#*{{$app.data['ws']['contacts']}}%>
-        
+<%#*<div ng-init="message_star(1)"></div>%>
+
+<%#*<div ng-init="%>
+<%#*$app.$entity.load('contacts', {%>
+<%#*$reload: true,%>
+<%#*$conclude: success,%>
+<%#*'Contact': {%>
+<%#*all: ''%>
+<%#*}%>
+<%#*});%>
+<%#*"></div>%>
+
+<%#*{{$app.data['ws']['contacts']}}%>
+
     </body>
 </html>
