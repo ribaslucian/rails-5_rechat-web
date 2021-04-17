@@ -49,7 +49,7 @@ $(document).ready(function () {
 
     if (getUserId() != 0) {
         if (typeof Android !== 'undefined') {
-            Android.login($('#rechat_session_cookie').attr('value'));
+//            Android.login($('#rechat_session_cookie').attr('value'));
         }
     }
 });
@@ -68,6 +68,7 @@ function certer_content_visible() {
 }
 
 function webview_logout() {
+    return;
     if (typeof Android !== 'undefined') {
         Android.logout();
     }
