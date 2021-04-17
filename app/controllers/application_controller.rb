@@ -7,6 +7,13 @@ class ApplicationController < ActionController::Base
   end
 
   def logged?
+    if session[:user] != nil
+      if request.env['PATH_INFO'] != '/voluntary'
+        session[:loaded] = true
+      end
+    else
+      session[:loaded] = false
+    end
 #    return d Message.all
     
 #    return d (%x(python scripts/polarity2.py "Minha nossa o que está acontecendo?"))

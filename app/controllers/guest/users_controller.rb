@@ -14,7 +14,7 @@ class Guest::UsersController < Guest::GuestController
         if user.type_acronym_id == 200
           return redirect_to '/researcher'
         else
-          return redirect_to '/voluntary'
+          return redirect_to '/voluntary?login=true'
         end
       end
       
