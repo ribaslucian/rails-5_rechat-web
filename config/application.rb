@@ -50,9 +50,9 @@ module MyChat
       end
     end
 
-    config.serve_static_assets = true
-    config.assets.enabled = false
-    config.assets.precompile = []
+#    config.serve_static_assets = true
+#    config.assets.enabled = false
+#    config.assets.precompile = []
     
     # Date
     # ----------------------------
