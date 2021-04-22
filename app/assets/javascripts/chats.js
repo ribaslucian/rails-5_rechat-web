@@ -52,14 +52,14 @@ function connect(origin_user_id) {
             }
 
             if (flash) {
-                $.toast({
-                    text: 'Nova mensagem: ' + data['message_record']['content'],
-                    position: 'top-center',
-                    hideAfter: 5000,
-                    loaderBg: '#777',
-                    bgColor: '#31708f',
-                    textColor: 'white',
-                });
+//                $.toast({
+//                    text: 'Nova mensagem: ' + data['message_record']['content'],
+//                    position: 'top-center',
+//                    hideAfter: 5000,
+//                    loaderBg: '#777',
+//                    bgColor: '#31708f',
+//                    textColor: 'white',
+//                });
             }
 
             loaded();
