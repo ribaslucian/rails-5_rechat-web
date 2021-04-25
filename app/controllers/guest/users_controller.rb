@@ -48,6 +48,12 @@ class Guest::UsersController < Guest::GuestController
       @user.contacts.build
       @user.contacts.build
       @user.contacts.build
+      
+      @user.contacts[0].type_acronym_id = 600
+      @user.contacts[1].type_acronym_id = 601
+      @user.contacts[2].type_acronym_id = 602
+      
+#      return d @user.contacts
     end
   end
 
