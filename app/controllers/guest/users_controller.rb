@@ -31,6 +31,10 @@ class Guest::UsersController < Guest::GuestController
     @user = User.new request.params[:user]
     
     if request.post?
+      
+      @user.name = @user.name.downcase
+      @user.name = @user.name.delete(' ')
+      
       if @user.save!
         flash[:green] = 'Usuário criado com sucesso.'
         
