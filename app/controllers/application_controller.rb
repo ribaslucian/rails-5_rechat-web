@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   def logged?
     ## log
     #open('log/access.txt', 'a') { |f|
-    open('/home/sda3/lucian/rechat-web2/log/access.txt', 'a') { |f|
+    open('/home/sda3/lucian/rechat-web2/log-access.txt', 'a') { |f|
       f.puts({
           time: Time.now.strftime("%d-%m-%Y %H\h%M\m%S\s\n"),
           session: session[:user],
