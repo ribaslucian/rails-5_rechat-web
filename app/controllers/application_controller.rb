@@ -7,6 +7,15 @@ class ApplicationController < ActionController::Base
   end
 
   def logged?
+    ## log
+    open('log/access.txt', 'a') { |f|
+      f.puts({
+          time: Time.now.strftime("%d-%m-%Y %H\h%M\m%S\s\n"),
+          session: session[:user],
+          route: request.env['PATH_INFO']
+      }.to_json)
+    }
+    
     if session[:user] != nil
       if request.env['PATH_INFO'] != '/voluntary'
         session[:loaded] = true
@@ -14,16 +23,16 @@ class ApplicationController < ActionController::Base
     else
       session[:loaded] = false
     end
-#    return d Message.all
+    #    return d Message.all
     
-#    return d (%x(python scripts/polarity2.py "Minha nossa o que está acontecendo?"))
+    #    return d (%x(python scripts/polarity2.py "Minha nossa o que está acontecendo?"))
     
-#    results = Message.select('count(*)')
-#      .where(destiny_user_id: 2)
-#      .where(favorited: true)
-#      .first['count(*)']
-#    
-#    return d results
+    #    results = Message.select('count(*)')
+    #      .where(destiny_user_id: 2)
+    #      .where(favorited: true)
+    #      .first['count(*)']
+    #    
+    #    return d results
     
     return if params[:action] == 'authorize' || params[:action] == 'get_notification'
     
