@@ -8,7 +8,7 @@
               </div>
 
 
-              <% m = Message.select(:id, :content, :chat_open).order(id: :desc).where(contact_id: c.id, origin_user_id: 0).first  %>
+              <% m = Message.select(:id, :content, :chat_open).order(id: :desc).where(contact_id: c.id).first  %>
               <%#= m.inspect %>
 
               <div class="ws-mobile-column-2">
@@ -19,7 +19,6 @@
 
                   <div class="ws-center-absolute-y" style="left: 0px; max-width: 90%;">
                       <div style="font-weight: 800;">
-
                           <%= c.name %>
                       </div>
 

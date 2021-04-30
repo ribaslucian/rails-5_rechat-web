@@ -267,7 +267,8 @@ class Message < ApplicationRecord
           Message.create!({
               origin_user_id: params['user_id'],
               destiny_user_id: params['user_id'],
-              contact_id: params['origin_contact_id'],
+#              contact_id: params['origin_contact_id'],
+              contact_id: contact_id,
               type_acronym_id: 6,
               
               #              interaction_message_id: params['interaction_message_id'],
@@ -276,7 +277,7 @@ class Message < ApplicationRecord
               # passar nos parametros
               content: params['content'],
               destiny_contact_id: contact_id,
-              interaction_id: params['interaction_id'],
+              #interaction_id: params['interaction_id'],
               interaction_ids: params['interaction_ids'],
               type_content_acronym_id: params['type_content_acronym_id'],
               reference_interaction_id: params['reference_interaction_id'],

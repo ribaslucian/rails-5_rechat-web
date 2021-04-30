@@ -79,7 +79,7 @@
             </div>
         </div>
 
-        <% Message.where("(origin_user_id = #{session[:user]['id']} OR destiny_user_id = #{session[:user]['id']}) AND (contact_id = '#{params[:contact_id]}')").order(id: :desc).limit(30).reverse.each do |m| %>
+        <% Message.where("(origin_user_id = #{session[:user]['id']} OR destiny_user_id = #{session[:user]['id']}) AND (contact_id = '#{params[:contact_id]}' OR destiny_contact_id = '#{params[:contact_id]}')").order(id: :desc).limit(30).reverse.each do |m| %>
           <div class="sub-message" id="<%= m.id %>">
               <%= render partial: 'message', locals: {message: m} %>
           </div>
@@ -203,7 +203,7 @@
     </div>
 
     <div class="content">
-        <% Contact.where(user_id: session[:user]['id']).each do |c| %>
+        <% Contact.where(user_id: session[:user]['id']).where("id <> #{params[:contact_id]}").each do |c| %>
 
           <div class="ui checkbox" style="padding: 10px;">
               <input type="checkbox" name="contacts_ids[<%= c.id %>]" ng-model="contacts_ids[<%= c.id %>]" />
