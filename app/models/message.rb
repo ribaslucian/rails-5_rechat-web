@@ -307,7 +307,7 @@ class Message < ApplicationRecord
       notification: true,
       contact: Contact.select(:name).find(m.contact_id).name,
       content: m.content,
-      m: m
+#      m: m
     }
   end
 end
