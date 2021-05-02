@@ -380,3 +380,588 @@
 {"time":"29-04-2021 22h29m22 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions/7/edit"}
 {"time":"29-04-2021 22h29m28 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions/7"}
 {"time":"29-04-2021 22h29m28 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"29-04-2021 22h32m33 \n","session":null,"route":"/"}
+{"time":"29-04-2021 22h36m41 \n","session":null,"route":"/api/get_notification/24"}
+{"time":"29-04-2021 22h41m11 \n","session":null,"route":"/api/get_notification/20"}
+{"time":"29-04-2021 22h50m13 \n","session":{"id":13,"entity_name":"Alexandre Gueths","name":"agueths","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:23:32.231Z","updated_at":"2021-04-26T11:23:32.231Z"},"route":"/"}
+{"time":"29-04-2021 22h50m13 \n","session":{"id":13,"entity_name":"Alexandre Gueths","name":"agueths","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:23:32.231Z","updated_at":"2021-04-26T11:23:32.231Z"},"route":"/voluntary"}
+{"time":"29-04-2021 22h50m18 \n","session":null,"route":"/api/get_notification/13"}
+{"time":"29-04-2021 22h50m21 \n","session":{"id":13,"entity_name":"Alexandre Gueths","name":"agueths","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:23:32.231Z","updated_at":"2021-04-26T11:23:32.231Z"},"route":"/voluntary/voluntary/chat/private/36"}
+{"time":"29-04-2021 22h50m27 \n","session":{"id":13,"entity_name":"Alexandre Gueths","name":"agueths","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:23:32.231Z","updated_at":"2021-04-26T11:23:32.231Z"},"route":"/api/authorize.json"}
+{"time":"29-04-2021 22h50m28 \n","session":{"id":13,"entity_name":"Alexandre Gueths","name":"agueths","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:23:32.231Z","updated_at":"2021-04-26T11:23:32.231Z"},"route":"/voluntary/voluntary/chat/private/37"}
+{"time":"29-04-2021 23h12m57 \n","session":null,"route":"/api/get_notification/19"}
+{"time":"29-04-2021 23h15m27 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/"}
+{"time":"29-04-2021 23h15m27 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/voluntary"}
+{"time":"29-04-2021 23h15m31 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/voluntary/voluntary/chat/private/24"}
+{"time":"29-04-2021 23h16m13 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/"}
+{"time":"29-04-2021 23h16m13 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/voluntary"}
+{"time":"29-04-2021 23h16m14 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/voluntary/voluntary/chat/private/24"}
+{"time":"29-04-2021 23h33m57 \n","session":{"id":13,"entity_name":"Alexandre Gueths","name":"agueths","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:23:32.231Z","updated_at":"2021-04-26T11:23:32.231Z"},"route":"/"}
+{"time":"29-04-2021 23h33m58 \n","session":{"id":13,"entity_name":"Alexandre Gueths","name":"agueths","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:23:32.231Z","updated_at":"2021-04-26T11:23:32.231Z"},"route":"/voluntary"}
+{"time":"29-04-2021 23h44m47 \n","session":null,"route":"/"}
+{"time":"30-04-2021 00h19m44 \n","session":null,"route":"/api/get_notification/7"}
+{"time":"30-04-2021 00h19m50 \n","session":null,"route":"/"}
+{"time":"30-04-2021 00h22m18 \n","session":{"id":7,"entity_name":"Turbo","name":"simas","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:52:28.091Z","updated_at":"2021-04-25T20:52:28.091Z"},"route":"/"}
+{"time":"30-04-2021 00h22m18 \n","session":{"id":7,"entity_name":"Turbo","name":"simas","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:52:28.091Z","updated_at":"2021-04-25T20:52:28.091Z"},"route":"/voluntary"}
+{"time":"30-04-2021 00h22m21 \n","session":{"id":7,"entity_name":"Turbo","name":"simas","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:52:28.091Z","updated_at":"2021-04-25T20:52:28.091Z"},"route":"/voluntary/voluntary/chat/private/18"}
+{"time":"30-04-2021 00h22m49 \n","session":null,"route":"/api/get_notification/7"}
+{"time":"30-04-2021 00h29m40 \n","session":null,"route":"/api/get_notification/16"}
+{"time":"30-04-2021 00h30m39 \n","session":null,"route":"/"}
+{"time":"30-04-2021 00h41m32 \n","session":null,"route":"/api/get_notification/14"}
+{"time":"30-04-2021 01h00m48 \n","session":null,"route":"/"}
+{"time":"30-04-2021 01h08m41 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/"}
+{"time":"30-04-2021 01h08m42 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary"}
+{"time":"30-04-2021 01h08m45 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary/voluntary/chat/private/53"}
+{"time":"30-04-2021 01h26m40 \n","session":null,"route":"/"}
+{"time":"30-04-2021 02h12m46 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"30-04-2021 02h19m08 \n","session":null,"route":"/api/get_notification/5"}
+{"time":"30-04-2021 02h19m13 \n","session":null,"route":"/"}
+{"time":"30-04-2021 02h26m12 \n","session":null,"route":"/"}
+{"time":"30-04-2021 02h36m41 \n","session":null,"route":"/api/get_notification/24"}
+{"time":"30-04-2021 02h41m11 \n","session":null,"route":"/api/get_notification/20"}
+{"time":"30-04-2021 02h44m13 \n","session":null,"route":"/api/get_notification/10"}
+{"time":"30-04-2021 02h50m13 \n","session":null,"route":"/api/get_notification/13"}
+{"time":"30-04-2021 03h07m13 \n","session":null,"route":"/"}
+{"time":"30-04-2021 03h08m49 \n","session":null,"route":"/api/get_notification/15"}
+{"time":"30-04-2021 03h41m07 \n","session":null,"route":"/"}
+{"time":"30-04-2021 04h04m04 \n","session":null,"route":"/"}
+{"time":"30-04-2021 04h22m41 \n","session":null,"route":"/api/get_notification/7"}
+{"time":"30-04-2021 04h41m31 \n","session":null,"route":"/api/get_notification/14"}
+{"time":"30-04-2021 05h59m45 \n","session":null,"route":"/"}
+{"time":"30-04-2021 06h00m28 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 06h00m34 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 06h00m44 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 06h00m49 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 06h01m03 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 06h01m20 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 06h01m25 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 06h01m40 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 06h01m49 \n","session":null,"route":"/"}
+{"time":"30-04-2021 06h01m54 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 06h02m01 \n","session":null,"route":"/"}
+{"time":"30-04-2021 06h02m05 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 06h02m11 \n","session":null,"route":"/"}
+{"time":"30-04-2021 06h02m17 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 06h02m23 \n","session":null,"route":"/"}
+{"time":"30-04-2021 06h02m28 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 06h02m35 \n","session":null,"route":"/"}
+{"time":"30-04-2021 06h02m40 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 06h02m47 \n","session":null,"route":"/"}
+{"time":"30-04-2021 06h02m51 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 06h02m58 \n","session":null,"route":"/"}
+{"time":"30-04-2021 06h03m02 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 06h03m09 \n","session":null,"route":"/"}
+{"time":"30-04-2021 06h03m14 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 06h03m21 \n","session":null,"route":"/"}
+{"time":"30-04-2021 06h03m25 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 06h03m32 \n","session":null,"route":"/"}
+{"time":"30-04-2021 06h03m37 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 06h03m44 \n","session":null,"route":"/"}
+{"time":"30-04-2021 06h03m48 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 06h03m55 \n","session":null,"route":"/"}
+{"time":"30-04-2021 06h03m59 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 06h04m06 \n","session":null,"route":"/"}
+{"time":"30-04-2021 06h04m11 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 06h10m18 \n","session":{"id":13,"entity_name":"Alexandre Gueths","name":"agueths","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:23:32.231Z","updated_at":"2021-04-26T11:23:32.231Z"},"route":"/"}
+{"time":"30-04-2021 06h10m18 \n","session":{"id":13,"entity_name":"Alexandre Gueths","name":"agueths","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:23:32.231Z","updated_at":"2021-04-26T11:23:32.231Z"},"route":"/voluntary"}
+{"time":"30-04-2021 06h10m36 \n","session":null,"route":"/api/get_notification/13"}
+{"time":"30-04-2021 06h15m03 \n","session":null,"route":"/api/get_notification/16"}
+{"time":"30-04-2021 06h15m32 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"30-04-2021 06h21m21 \n","session":null,"route":"/api/get_notification/5"}
+{"time":"30-04-2021 06h21m59 \n","session":null,"route":"/api/get_notification/10"}
+{"time":"30-04-2021 06h36m41 \n","session":null,"route":"/api/get_notification/24"}
+{"time":"30-04-2021 07h04m06 \n","session":null,"route":"/api/get_notification/8"}
+{"time":"30-04-2021 07h04m10 \n","session":{"id":8,"entity_name":"Ana Paula","name":"ana","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:58:40.834Z","updated_at":"2021-04-25T20:58:40.834Z"},"route":"/"}
+{"time":"30-04-2021 07h04m10 \n","session":{"id":8,"entity_name":"Ana Paula","name":"ana","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:58:40.834Z","updated_at":"2021-04-25T20:58:40.834Z"},"route":"/voluntary"}
+{"time":"30-04-2021 07h04m16 \n","session":{"id":8,"entity_name":"Ana Paula","name":"ana","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:58:40.834Z","updated_at":"2021-04-25T20:58:40.834Z"},"route":"/voluntary/voluntary/chat/private/22"}
+{"time":"30-04-2021 07h04m21 \n","session":null,"route":"/api/get_notification/8"}
+{"time":"30-04-2021 07h05m30 \n","session":{"id":8,"entity_name":"Ana Paula","name":"ana","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:58:40.834Z","updated_at":"2021-04-25T20:58:40.834Z"},"route":"/voluntary/voluntary/chat/private/22"}
+{"time":"30-04-2021 07h32m55 \n","session":null,"route":"/"}
+{"time":"30-04-2021 08h02m01 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/"}
+{"time":"30-04-2021 08h02m01 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/voluntary"}
+{"time":"30-04-2021 08h02m04 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/voluntary/voluntary/chat/private/41"}
+{"time":"30-04-2021 08h08m18 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/"}
+{"time":"30-04-2021 08h08m18 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher"}
+{"time":"30-04-2021 08h08m35 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/messages"}
+{"time":"30-04-2021 08h08m36 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"30-04-2021 08h13m40 \n","session":null,"route":"/"}
+{"time":"30-04-2021 08h14m09 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 08h14m12 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 08h15m44 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 08h15m44 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 08h15m53 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 08h16m04 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 08h16m12 \n","session":null,"route":"/"}
+{"time":"30-04-2021 08h16m31 \n","session":null,"route":"/"}
+{"time":"30-04-2021 08h16m33 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 08h16m55 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/"}
+{"time":"30-04-2021 08h16m55 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary"}
+{"time":"30-04-2021 08h16m59 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary/voluntary/chat/private/1"}
+{"time":"30-04-2021 08h17m06 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"30-04-2021 08h17m20 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 08h17m20 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 08h17m31 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 08h17m31 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary"}
+{"time":"30-04-2021 08h17m40 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary"}
+{"time":"30-04-2021 08h17m40 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 08h17m43 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary/voluntary/chat/private/1"}
+{"time":"30-04-2021 08h17m58 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 08h18m21 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/"}
+{"time":"30-04-2021 08h18m21 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher"}
+{"time":"30-04-2021 08h18m23 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"30-04-2021 08h19m18 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/82"}
+{"time":"30-04-2021 08h19m22 \n","session":null,"route":"/api/get_notification/27"}
+{"time":"30-04-2021 08h19m27 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 08h19m28 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/83"}
+{"time":"30-04-2021 08h19m30 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 08h19m31 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/81"}
+{"time":"30-04-2021 08h19m32 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 08h20m44 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/82"}
+{"time":"30-04-2021 08h20m47 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 08h22m53 \n","session":null,"route":"/api/get_notification/25"}
+{"time":"30-04-2021 08h26m41 \n","session":null,"route":"/api/get_notification/7"}
+{"time":"30-04-2021 08h30m02 \n","session":null,"route":"/api/get_notification/16"}
+{"time":"30-04-2021 08h30m36 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/"}
+{"time":"30-04-2021 08h30m36 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher"}
+{"time":"30-04-2021 08h35m27 \n","session":null,"route":"/api/get_notification/14"}
+{"time":"30-04-2021 08h35m42 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/voluntary"}
+{"time":"30-04-2021 08h35m42 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 08h35m44 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/voluntary/voluntary/chat/private/41"}
+{"time":"30-04-2021 08h35m50 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 08h35m52 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/voluntary"}
+{"time":"30-04-2021 08h35m52 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h22m33 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h22m38 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h22m41 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h22m51 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h23m05 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h23m52 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h24m18 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h24m23 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h24m29 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h24m53 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h25m29 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h26m41 \n","session":null,"route":"/"}
+{"time":"30-04-2021 09h28m10 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h29m34 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h29m44 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h29m48 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h30m09 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h30m18 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h30m23 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h30m31 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h30m36 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h30m44 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h33m35 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h33m41 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h36m22 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h36m31 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h36m50 \n","session":{"id":3,"entity_name":"Erika","name":"erikakekes","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:24:32.707Z","updated_at":"2021-04-25T19:37:33.342Z"},"route":"/guest/users/sign_in"}
+{"time":"30-04-2021 09h36m50 \n","session":{"id":3,"entity_name":"Erika","name":"erikakekes","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:24:32.707Z","updated_at":"2021-04-25T19:37:33.342Z"},"route":"/voluntary"}
+{"time":"30-04-2021 09h36m54 \n","session":{"id":3,"entity_name":"Erika","name":"erikakekes","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:24:32.707Z","updated_at":"2021-04-25T19:37:33.342Z"},"route":"/voluntary/voluntary/chat/private/6"}
+{"time":"30-04-2021 09h37m04 \n","session":null,"route":"/api/authorize.json"}
+{"time":"30-04-2021 09h37m58 \n","session":{"id":3,"entity_name":"Erika","name":"erikakekes","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:24:32.707Z","updated_at":"2021-04-25T19:37:33.342Z"},"route":"/voluntary"}
+{"time":"30-04-2021 09h38m01 \n","session":{"id":3,"entity_name":"Erika","name":"erikakekes","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:24:32.707Z","updated_at":"2021-04-25T19:37:33.342Z"},"route":"/voluntary/voluntary/chat/private/8"}
+{"time":"30-04-2021 09h38m30 \n","session":{"id":3,"entity_name":"Erika","name":"erikakekes","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:24:32.707Z","updated_at":"2021-04-25T19:37:33.342Z"},"route":"/voluntary"}
+{"time":"30-04-2021 09h51m39 \n","session":null,"route":"/api/get_notification/18"}
+{"time":"30-04-2021 09h52m33 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/"}
+{"time":"30-04-2021 09h52m33 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary"}
+{"time":"30-04-2021 09h52m44 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary/voluntary/chat/private/53"}
+{"time":"30-04-2021 09h52m51 \n","session":null,"route":"/api/get_notification/18"}
+{"time":"30-04-2021 09h52m52 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary/voluntary/chat/private/53"}
+{"time":"30-04-2021 10h00m23 \n","session":null,"route":"/api/get_notification/15"}
+{"time":"30-04-2021 10h06m00 \n","session":null,"route":"/"}
+{"time":"30-04-2021 10h06m10 \n","session":null,"route":"/"}
+{"time":"30-04-2021 10h06m21 \n","session":null,"route":"/"}
+{"time":"30-04-2021 10h26m47 \n","session":null,"route":"/"}
+{"time":"30-04-2021 10h41m08 \n","session":null,"route":"/api/get_notification/20"}
+{"time":"30-04-2021 10h58m24 \n","session":null,"route":"/api/get_notification/24"}
+{"time":"30-04-2021 11h02m22 \n","session":null,"route":"/api/get_notification/25"}
+{"time":"30-04-2021 11h04m11 \n","session":null,"route":"/api/get_notification/8"}
+{"time":"30-04-2021 11h14m47 \n","session":{"id":15,"entity_name":"Moises","name":"moises","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:01:40.122Z","updated_at":"2021-04-26T12:01:40.122Z"},"route":"/"}
+{"time":"30-04-2021 11h14m48 \n","session":{"id":15,"entity_name":"Moises","name":"moises","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:01:40.122Z","updated_at":"2021-04-26T12:01:40.122Z"},"route":"/voluntary"}
+{"time":"30-04-2021 11h14m50 \n","session":{"id":15,"entity_name":"Moises","name":"moises","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:01:40.122Z","updated_at":"2021-04-26T12:01:40.122Z"},"route":"/voluntary/voluntary/chat/private/44"}
+{"time":"30-04-2021 11h15m41 \n","session":null,"route":"/api/get_notification/15"}
+{"time":"30-04-2021 11h16m21 \n","session":null,"route":"/api/get_notification/13"}
+{"time":"30-04-2021 11h47m25 \n","session":null,"route":"/"}
+{"time":"30-04-2021 11h50m03 \n","session":null,"route":"/"}
+{"time":"30-04-2021 12h17m08 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"30-04-2021 12h17m36 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/"}
+{"time":"30-04-2021 12h17m36 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary"}
+{"time":"30-04-2021 12h17m56 \n","session":null,"route":"/api/get_notification/27"}
+{"time":"30-04-2021 12h20m00 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/"}
+{"time":"30-04-2021 12h20m00 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/voluntary"}
+{"time":"30-04-2021 12h22m18 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/"}
+{"time":"30-04-2021 12h22m18 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary"}
+{"time":"30-04-2021 12h22m21 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/81"}
+{"time":"30-04-2021 12h22m24 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/82"}
+{"time":"30-04-2021 12h22m24 \n","session":null,"route":"/api/get_notification/7"}
+{"time":"30-04-2021 12h22m27 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/83"}
+{"time":"30-04-2021 12h22m41 \n","session":null,"route":"/api/get_notification/27"}
+{"time":"30-04-2021 12h22m47 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/"}
+{"time":"30-04-2021 12h22m47 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary"}
+{"time":"30-04-2021 12h22m53 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary"}
+{"time":"30-04-2021 12h22m58 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary"}
+{"time":"30-04-2021 12h23m21 \n","session":null,"route":"/api/get_notification/27"}
+{"time":"30-04-2021 12h30m36 \n","session":null,"route":"/api/get_notification/16"}
+{"time":"30-04-2021 12h35m02 \n","session":{"id":7,"entity_name":"Turbo","name":"simas","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:52:28.091Z","updated_at":"2021-04-25T20:52:28.091Z"},"route":"/"}
+{"time":"30-04-2021 12h35m02 \n","session":{"id":7,"entity_name":"Turbo","name":"simas","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:52:28.091Z","updated_at":"2021-04-25T20:52:28.091Z"},"route":"/voluntary"}
+{"time":"30-04-2021 12h35m06 \n","session":null,"route":"/api/get_notification/7"}
+{"time":"30-04-2021 12h35m30 \n","session":{"id":7,"entity_name":"Turbo","name":"simas","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:52:28.091Z","updated_at":"2021-04-25T20:52:28.091Z"},"route":"/voluntary/voluntary/chat/private/18"}
+{"time":"30-04-2021 12h37m14 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/"}
+{"time":"30-04-2021 12h37m14 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher"}
+{"time":"30-04-2021 12h38m38 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/"}
+{"time":"30-04-2021 12h38m38 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary"}
+{"time":"30-04-2021 12h38m41 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary/voluntary/chat/private/1"}
+{"time":"30-04-2021 12h38m51 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary"}
+{"time":"30-04-2021 12h38m51 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 12h38m52 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary/voluntary/chat/private/5"}
+{"time":"30-04-2021 12h39m03 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"30-04-2021 12h39m13 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary/voluntary/chat/private/5"}
+{"time":"30-04-2021 12h39m21 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 12h39m23 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary"}
+{"time":"30-04-2021 12h39m23 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 12h39m25 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary/voluntary/chat/private/1"}
+{"time":"30-04-2021 12h39m31 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary"}
+{"time":"30-04-2021 12h39m31 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 13h12m34 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/"}
+{"time":"30-04-2021 13h12m34 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher"}
+{"time":"30-04-2021 13h12m37 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"30-04-2021 13h13m15 \n","session":{"id":15,"entity_name":"Moises","name":"moises","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:01:40.122Z","updated_at":"2021-04-26T12:01:40.122Z"},"route":"/"}
+{"time":"30-04-2021 13h13m15 \n","session":{"id":15,"entity_name":"Moises","name":"moises","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:01:40.122Z","updated_at":"2021-04-26T12:01:40.122Z"},"route":"/voluntary"}
+{"time":"30-04-2021 13h13m18 \n","session":{"id":15,"entity_name":"Moises","name":"moises","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:01:40.122Z","updated_at":"2021-04-26T12:01:40.122Z"},"route":"/voluntary/voluntary/chat/private/44"}
+{"time":"30-04-2021 13h13m19 \n","session":null,"route":"/api/get_notification/15"}
+{"time":"30-04-2021 13h13m23 \n","session":{"id":15,"entity_name":"Moises","name":"moises","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:01:40.122Z","updated_at":"2021-04-26T12:01:40.122Z"},"route":"/voluntary/voluntary/chat/private/43"}
+{"time":"30-04-2021 13h26m19 \n","session":null,"route":"/"}
+{"time":"30-04-2021 13h26m21 \n","session":null,"route":"/"}
+{"time":"30-04-2021 13h26m27 \n","session":null,"route":"/"}
+{"time":"30-04-2021 13h46m14 \n","session":null,"route":"/"}
+{"time":"30-04-2021 14h27m08 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"30-04-2021 14h27m21 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/users"}
+{"time":"30-04-2021 14h27m30 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"30-04-2021 14h29m23 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/users/logout"}
+{"time":"30-04-2021 14h29m23 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 14h29m29 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 14h29m29 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-30T15:39:40.222Z"},"route":"/voluntary"}
+{"time":"30-04-2021 14h30m04 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-30T15:39:40.222Z"},"route":"/voluntary/voluntary/chat/private/3"}
+{"time":"30-04-2021 14h30m08 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-30T15:39:40.222Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 14h30m28 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-30T15:39:40.222Z"},"route":"/voluntary"}
+{"time":"30-04-2021 14h30m28 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-30T15:39:40.222Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 14h30m30 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-30T15:39:40.222Z"},"route":"/voluntary/users/logout"}
+{"time":"30-04-2021 14h30m30 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 14h30m33 \n","session":null,"route":"/"}
+{"time":"30-04-2021 14h30m36 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 14h30m36 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher"}
+{"time":"30-04-2021 14h30m40 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"30-04-2021 14h30m44 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"30-04-2021 14h31m00 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/"}
+{"time":"30-04-2021 14h31m01 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary"}
+{"time":"30-04-2021 14h31m03 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary/voluntary/chat/private/3"}
+{"time":"30-04-2021 14h31m06 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary"}
+{"time":"30-04-2021 14h31m06 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 14h31m08 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary/voluntary/chat/private/5"}
+{"time":"30-04-2021 14h31m14 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"30-04-2021 14h31m17 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 14h31m21 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"30-04-2021 14h31m28 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 14h31m32 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"30-04-2021 14h31m38 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 14h31m40 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"30-04-2021 14h31m52 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/dashboard/index"}
+{"time":"30-04-2021 14h31m58 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary"}
+{"time":"30-04-2021 14h31m58 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 14h36m42 \n","session":null,"route":"/api/get_notification/24"}
+{"time":"30-04-2021 14h44m09 \n","session":null,"route":"/api/get_notification/14"}
+{"time":"30-04-2021 14h48m30 \n","session":null,"route":"/api/get_notification/20"}
+{"time":"30-04-2021 14h54m28 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/dashboard/index"}
+{"time":"30-04-2021 14h54m31 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"30-04-2021 14h54m37 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/users/logout"}
+{"time":"30-04-2021 14h54m37 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 14h56m18 \n","session":null,"route":"/api/get_notification/18"}
+{"time":"30-04-2021 14h58m14 \n","session":null,"route":"/"}
+{"time":"30-04-2021 14h58m21 \n","session":null,"route":"/guest/users/login"}
+{"time":"30-04-2021 14h58m21 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher"}
+{"time":"30-04-2021 14h58m22 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"30-04-2021 15h02m37 \n","session":null,"route":"/api/get_notification/25"}
+{"time":"30-04-2021 15h06m12 \n","session":null,"route":"/api/get_notification/8"}
+{"time":"30-04-2021 15h15m17 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/"}
+{"time":"30-04-2021 15h15m18 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary"}
+{"time":"30-04-2021 15h15m47 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/"}
+{"time":"30-04-2021 15h15m48 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary"}
+{"time":"30-04-2021 15h15m51 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary/voluntary/chat/private/53"}
+{"time":"30-04-2021 15h27m27 \n","session":null,"route":"/"}
+{"time":"30-04-2021 15h50m00 \n","session":{"id":3,"entity_name":"Erika","name":"erikakekes","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:24:32.707Z","updated_at":"2021-04-25T19:37:33.342Z"},"route":"/voluntary"}
+{"time":"30-04-2021 16h24m53 \n","session":null,"route":"/api/get_notification/27"}
+{"time":"30-04-2021 16h29m56 \n","session":null,"route":"/api/get_notification/16"}
+{"time":"30-04-2021 16h29m59 \n","session":{"id":16,"entity_name":"Paola Machado","name":"paola","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:37:13.092Z","updated_at":"2021-04-26T16:42:20.260Z"},"route":"/"}
+{"time":"30-04-2021 16h29m59 \n","session":{"id":16,"entity_name":"Paola Machado","name":"paola","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:37:13.092Z","updated_at":"2021-04-26T16:42:20.260Z"},"route":"/voluntary"}
+{"time":"30-04-2021 16h30m03 \n","session":{"id":16,"entity_name":"Paola Machado","name":"paola","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:37:13.092Z","updated_at":"2021-04-26T16:42:20.260Z"},"route":"/voluntary/voluntary/chat/private/47"}
+{"time":"30-04-2021 16h30m10 \n","session":null,"route":"/api/get_notification/16"}
+{"time":"30-04-2021 16h30m29 \n","session":{"id":16,"entity_name":"Paola Machado","name":"paola","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:37:13.092Z","updated_at":"2021-04-26T16:42:20.260Z"},"route":"/voluntary"}
+{"time":"30-04-2021 16h30m30 \n","session":{"id":16,"entity_name":"Paola Machado","name":"paola","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:37:13.092Z","updated_at":"2021-04-26T16:42:20.260Z"},"route":"/voluntary/voluntary/chat/private/45"}
+{"time":"30-04-2021 16h35m25 \n","session":null,"route":"/"}
+{"time":"30-04-2021 17h24m53 \n","session":null,"route":"/api/get_notification/5"}
+{"time":"30-04-2021 18h04m30 \n","session":null,"route":"/"}
+{"time":"30-04-2021 18h10m35 \n","session":null,"route":"/api/get_notification/13"}
+{"time":"30-04-2021 18h13m36 \n","session":null,"route":"/"}
+{"time":"30-04-2021 18h32m29 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"30-04-2021 18h38m29 \n","session":null,"route":"/api/get_notification/24"}
+{"time":"30-04-2021 18h45m55 \n","session":null,"route":"/api/get_notification/20"}
+{"time":"30-04-2021 18h49m39 \n","session":null,"route":"/"}
+{"time":"30-04-2021 19h02m29 \n","session":null,"route":"/api/get_notification/25"}
+{"time":"30-04-2021 19h19m35 \n","session":null,"route":"/"}
+{"time":"30-04-2021 19h21m09 \n","session":null,"route":"/"}
+{"time":"30-04-2021 19h24m32 \n","session":null,"route":"/api/get_notification/5"}
+{"time":"30-04-2021 19h25m31 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/"}
+{"time":"30-04-2021 19h25m31 \n","session":null,"route":"/api/get_notification/9"}
+{"time":"30-04-2021 19h25m31 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/voluntary"}
+{"time":"30-04-2021 19h25m35 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/voluntary/voluntary/chat/private/25"}
+{"time":"30-04-2021 19h25m50 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/"}
+{"time":"30-04-2021 19h25m51 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/voluntary"}
+{"time":"30-04-2021 19h31m12 \n","session":null,"route":"/api/get_notification/18"}
+{"time":"30-04-2021 19h49m29 \n","session":null,"route":"/"}
+{"time":"30-04-2021 20h06m31 \n","session":null,"route":"/api/get_notification/14"}
+{"time":"30-04-2021 20h17m55 \n","session":null,"route":"/"}
+{"time":"30-04-2021 20h23m17 \n","session":null,"route":"/api/get_notification/27"}
+{"time":"30-04-2021 20h25m43 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/"}
+{"time":"30-04-2021 20h25m43 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/voluntary"}
+{"time":"30-04-2021 20h25m46 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/voluntary/voluntary/chat/private/39"}
+{"time":"30-04-2021 20h26m01 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 20h26m25 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 20h26m25 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/voluntary"}
+{"time":"30-04-2021 20h26m28 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/voluntary/voluntary/chat/private/41"}
+{"time":"30-04-2021 20h26m30 \n","session":null,"route":"/api/get_notification/14"}
+{"time":"30-04-2021 20h26m38 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 20h33m00 \n","session":{"id":16,"entity_name":"Paola Machado","name":"paola","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:37:13.092Z","updated_at":"2021-04-26T16:42:20.260Z"},"route":"/"}
+{"time":"30-04-2021 20h33m00 \n","session":{"id":16,"entity_name":"Paola Machado","name":"paola","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:37:13.092Z","updated_at":"2021-04-26T16:42:20.260Z"},"route":"/voluntary"}
+{"time":"30-04-2021 20h34m03 \n","session":null,"route":"/api/get_notification/16"}
+{"time":"30-04-2021 20h34m10 \n","session":{"id":16,"entity_name":"Paola Machado","name":"paola","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:37:13.092Z","updated_at":"2021-04-26T16:42:20.260Z"},"route":"/voluntary/voluntary/chat/private/47"}
+{"time":"30-04-2021 20h36m46 \n","session":{"id":7,"entity_name":"Turbo","name":"simas","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:52:28.091Z","updated_at":"2021-04-25T20:52:28.091Z"},"route":"/"}
+{"time":"30-04-2021 20h36m46 \n","session":{"id":7,"entity_name":"Turbo","name":"simas","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:52:28.091Z","updated_at":"2021-04-25T20:52:28.091Z"},"route":"/voluntary"}
+{"time":"30-04-2021 20h37m14 \n","session":{"id":7,"entity_name":"Turbo","name":"simas","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:52:28.091Z","updated_at":"2021-04-25T20:52:28.091Z"},"route":"/voluntary/voluntary/chat/private/18"}
+{"time":"30-04-2021 20h50m22 \n","session":null,"route":"/"}
+{"time":"30-04-2021 20h58m25 \n","session":null,"route":"/"}
+{"time":"30-04-2021 21h11m33 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/"}
+{"time":"30-04-2021 21h11m34 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary"}
+{"time":"30-04-2021 21h11m37 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary/voluntary/chat/private/52"}
+{"time":"30-04-2021 21h11m40 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary/voluntary/chat/private/54"}
+{"time":"30-04-2021 21h11m42 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary/voluntary/chat/private/53"}
+{"time":"30-04-2021 21h11m45 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 21h11m46 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary/voluntary/chat/private/51"}
+{"time":"30-04-2021 21h11m50 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary/voluntary/chat/private/55"}
+{"time":"30-04-2021 21h14m09 \n","session":null,"route":"/"}
+{"time":"30-04-2021 21h32m46 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/"}
+{"time":"30-04-2021 21h32m46 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary"}
+{"time":"30-04-2021 21h33m07 \n","session":null,"route":"/api/get_notification/27"}
+{"time":"30-04-2021 21h35m11 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/"}
+{"time":"30-04-2021 21h35m11 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary"}
+{"time":"30-04-2021 21h35m14 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/83"}
+{"time":"30-04-2021 21h35m23 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 21h35m23 \n","session":{"id":25,"entity_name":"Rilu","name":"bilu","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-29T17:50:59.554Z","updated_at":"2021-04-29T17:50:59.554Z"},"route":"/"}
+{"time":"30-04-2021 21h35m23 \n","session":{"id":25,"entity_name":"Rilu","name":"bilu","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-29T17:50:59.554Z","updated_at":"2021-04-29T17:50:59.554Z"},"route":"/voluntary"}
+{"time":"30-04-2021 21h35m27 \n","session":{"id":25,"entity_name":"Rilu","name":"bilu","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-29T17:50:59.554Z","updated_at":"2021-04-29T17:50:59.554Z"},"route":"/voluntary/voluntary/chat/private/77"}
+{"time":"30-04-2021 21h35m29 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/83"}
+{"time":"30-04-2021 21h35m31 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 21h35m32 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/82"}
+{"time":"30-04-2021 21h35m37 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 21h35m39 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/82"}
+{"time":"30-04-2021 21h35m45 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/83"}
+{"time":"30-04-2021 21h35m47 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 21h35m48 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/81"}
+{"time":"30-04-2021 21h35m49 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 21h35m50 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/83"}
+{"time":"30-04-2021 21h35m59 \n","session":null,"route":"/api/get_notification/27"}
+{"time":"30-04-2021 21h36m07 \n","session":null,"route":"/api/get_notification/25"}
+{"time":"30-04-2021 21h36m44 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/"}
+{"time":"30-04-2021 21h36m44 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary"}
+{"time":"30-04-2021 21h36m52 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/81"}
+{"time":"30-04-2021 21h38m05 \n","session":{"id":25,"entity_name":"Rilu","name":"bilu","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-29T17:50:59.554Z","updated_at":"2021-04-29T17:50:59.554Z"},"route":"/voluntary"}
+{"time":"30-04-2021 21h38m05 \n","session":{"id":25,"entity_name":"Rilu","name":"bilu","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-29T17:50:59.554Z","updated_at":"2021-04-29T17:50:59.554Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 21h38m09 \n","session":null,"route":"/"}
+{"time":"30-04-2021 21h38m11 \n","session":{"id":25,"entity_name":"Rilu","name":"bilu","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-29T17:50:59.554Z","updated_at":"2021-04-29T17:50:59.554Z"},"route":"/voluntary/voluntary/chat/private/75"}
+{"time":"30-04-2021 21h38m18 \n","session":{"id":25,"entity_name":"Rilu","name":"bilu","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-29T17:50:59.554Z","updated_at":"2021-04-29T17:50:59.554Z"},"route":"/voluntary/voluntary/chat/private/76"}
+{"time":"30-04-2021 21h38m28 \n","session":{"id":25,"entity_name":"Rilu","name":"bilu","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-29T17:50:59.554Z","updated_at":"2021-04-29T17:50:59.554Z"},"route":"/voluntary/voluntary/chat/private/75"}
+{"time":"30-04-2021 21h38m59 \n","session":null,"route":"/api/get_notification/27"}
+{"time":"30-04-2021 21h39m19 \n","session":null,"route":"/"}
+{"time":"30-04-2021 21h40m42 \n","session":{"id":25,"entity_name":"Rilu","name":"bilu","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-29T17:50:59.554Z","updated_at":"2021-04-29T17:50:59.554Z"},"route":"/"}
+{"time":"30-04-2021 21h40m42 \n","session":{"id":25,"entity_name":"Rilu","name":"bilu","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-29T17:50:59.554Z","updated_at":"2021-04-29T17:50:59.554Z"},"route":"/voluntary"}
+{"time":"30-04-2021 22h06m58 \n","session":null,"route":"/api/get_notification/18"}
+{"time":"30-04-2021 22h21m59 \n","session":null,"route":"/api/get_notification/10"}
+{"time":"30-04-2021 22h30m19 \n","session":null,"route":"/api/get_notification/13"}
+{"time":"30-04-2021 22h32m04 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"30-04-2021 22h41m06 \n","session":null,"route":"/api/get_notification/20"}
+{"time":"30-04-2021 23h08m14 \n","session":null,"route":"/api/get_notification/8"}
+{"time":"30-04-2021 23h34m37 \n","session":{"id":8,"entity_name":"Ana Paula","name":"ana","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:58:40.834Z","updated_at":"2021-04-25T20:58:40.834Z"},"route":"/"}
+{"time":"30-04-2021 23h34m37 \n","session":{"id":8,"entity_name":"Ana Paula","name":"ana","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:58:40.834Z","updated_at":"2021-04-25T20:58:40.834Z"},"route":"/voluntary"}
+{"time":"30-04-2021 23h34m40 \n","session":{"id":8,"entity_name":"Ana Paula","name":"ana","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:58:40.834Z","updated_at":"2021-04-25T20:58:40.834Z"},"route":"/voluntary/voluntary/chat/private/22"}
+{"time":"30-04-2021 23h34m48 \n","session":{"id":8,"entity_name":"Ana Paula","name":"ana","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:58:40.834Z","updated_at":"2021-04-25T20:58:40.834Z"},"route":"/api/authorize.json"}
+{"time":"30-04-2021 23h34m48 \n","session":{"id":8,"entity_name":"Ana Paula","name":"ana","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:58:40.834Z","updated_at":"2021-04-25T20:58:40.834Z"},"route":"/voluntary"}
+{"time":"30-04-2021 23h34m54 \n","session":null,"route":"/api/get_notification/8"}
+{"time":"30-04-2021 23h50m41 \n","session":null,"route":"/api/get_notification/24"}
+{"time":"01-05-2021 00h41m18 \n","session":null,"route":"/api/get_notification/16"}
+{"time":"01-05-2021 00h56m45 \n","session":null,"route":"/"}
+{"time":"01-05-2021 01h10m48 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/"}
+{"time":"01-05-2021 01h10m48 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary"}
+{"time":"01-05-2021 01h21m31 \n","session":null,"route":"/api/get_notification/15"}
+{"time":"01-05-2021 01h53m17 \n","session":null,"route":"/"}
+{"time":"01-05-2021 02h11m03 \n","session":null,"route":"/api/get_notification/13"}
+{"time":"01-05-2021 02h32m36 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"01-05-2021 02h38m37 \n","session":null,"route":"/api/get_notification/24"}
+{"time":"01-05-2021 02h41m21 \n","session":null,"route":"/api/get_notification/10"}
+{"time":"01-05-2021 02h52m37 \n","session":null,"route":"/api/get_notification/20"}
+{"time":"01-05-2021 03h10m32 \n","session":null,"route":"/api/get_notification/25"}
+{"time":"01-05-2021 03h14m55 \n","session":null,"route":"/"}
+{"time":"01-05-2021 03h48m08 \n","session":null,"route":"/api/get_notification/8"}
+{"time":"01-05-2021 03h52m44 \n","session":null,"route":"/"}
+{"time":"01-05-2021 04h37m00 \n","session":null,"route":"/api/get_notification/7"}
+{"time":"01-05-2021 04h43m58 \n","session":null,"route":"/"}
+{"time":"01-05-2021 04h48m50 \n","session":null,"route":"/"}
+{"time":"01-05-2021 04h48m51 \n","session":null,"route":"/"}
+{"time":"01-05-2021 04h54m30 \n","session":null,"route":"/api/get_notification/16"}
+{"time":"01-05-2021 05h08m30 \n","session":null,"route":"/"}
+{"time":"01-05-2021 06h10m41 \n","session":null,"route":"/api/get_notification/13"}
+{"time":"01-05-2021 06h20m22 \n","session":null,"route":"/"}
+{"time":"01-05-2021 06h21m13 \n","session":null,"route":"/"}
+{"time":"01-05-2021 06h32m48 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"01-05-2021 06h34m19 \n","session":null,"route":"/api/get_notification/10"}
+{"time":"01-05-2021 06h36m34 \n","session":null,"route":"/api/get_notification/14"}
+{"time":"01-05-2021 06h38m56 \n","session":null,"route":"/api/get_notification/24"}
+{"time":"01-05-2021 06h41m07 \n","session":null,"route":"/api/get_notification/20"}
+{"time":"01-05-2021 07h05m01 \n","session":null,"route":"/api/get_notification/25"}
+{"time":"01-05-2021 07h07m33 \n","session":null,"route":"/"}
+{"time":"01-05-2021 07h17m53 \n","session":null,"route":"/api/get_notification/27"}
+{"time":"01-05-2021 07h23m45 \n","session":null,"route":"/api/get_notification/5"}
+{"time":"01-05-2021 07h29m59 \n","session":null,"route":"/"}
+{"time":"01-05-2021 07h41m46 \n","session":null,"route":"/"}
+{"time":"01-05-2021 07h42m21 \n","session":null,"route":"/guest/users/login"}
+{"time":"01-05-2021 07h42m26 \n","session":null,"route":"/guest/users/login"}
+{"time":"01-05-2021 07h42m31 \n","session":null,"route":"/guest/users/login"}
+{"time":"01-05-2021 07h42m35 \n","session":null,"route":"/guest/users/sign_in"}
+{"time":"01-05-2021 07h42m48 \n","session":null,"route":"/guest/users/login"}
+{"time":"01-05-2021 07h42m51 \n","session":null,"route":"/guest/users/login"}
+{"time":"01-05-2021 08h14m29 \n","session":null,"route":"/"}
+{"time":"01-05-2021 08h37m00 \n","session":null,"route":"/api/get_notification/7"}
+{"time":"01-05-2021 09h08m14 \n","session":null,"route":"/"}
+{"time":"01-05-2021 09h09m15 \n","session":null,"route":"/api/get_notification/16"}
+{"time":"01-05-2021 10h03m06 \n","session":null,"route":"/api/get_notification/25"}
+{"time":"01-05-2021 10h10m24 \n","session":null,"route":"/api/get_notification/13"}
+{"time":"01-05-2021 10h30m55 \n","session":null,"route":"/"}
+{"time":"01-05-2021 10h32m47 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"01-05-2021 10h36m41 \n","session":null,"route":"/api/get_notification/24"}
+{"time":"01-05-2021 10h41m04 \n","session":null,"route":"/api/get_notification/20"}
+{"time":"01-05-2021 10h41m43 \n","session":null,"route":"/"}
+{"time":"01-05-2021 11h08m00 \n","session":null,"route":"/"}
+{"time":"01-05-2021 11h17m28 \n","session":null,"route":"/api/get_notification/27"}
+{"time":"01-05-2021 11h24m06 \n","session":null,"route":"/api/get_notification/5"}
+{"time":"01-05-2021 11h54m50 \n","session":null,"route":"/"}
+{"time":"01-05-2021 12h09m59 \n","session":null,"route":"/"}
+{"time":"01-05-2021 12h33m05 \n","session":null,"route":"/api/get_notification/16"}
+{"time":"01-05-2021 12h37m07 \n","session":null,"route":"/api/get_notification/7"}
+{"time":"01-05-2021 12h54m01 \n","session":null,"route":"/"}
+{"time":"01-05-2021 13h23m22 \n","session":null,"route":"/api/get_notification/15"}
+{"time":"01-05-2021 13h34m23 \n","session":{"id":15,"entity_name":"Moises","name":"moises","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:01:40.122Z","updated_at":"2021-04-26T12:01:40.122Z"},"route":"/"}
+{"time":"01-05-2021 13h34m24 \n","session":{"id":15,"entity_name":"Moises","name":"moises","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:01:40.122Z","updated_at":"2021-04-26T12:01:40.122Z"},"route":"/voluntary"}
+{"time":"01-05-2021 13h34m28 \n","session":{"id":15,"entity_name":"Moises","name":"moises","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T12:01:40.122Z","updated_at":"2021-04-26T12:01:40.122Z"},"route":"/voluntary/voluntary/chat/private/44"}
+{"time":"01-05-2021 13h47m55 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/"}
+{"time":"01-05-2021 13h47m58 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher"}
+{"time":"01-05-2021 13h49m06 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher"}
+{"time":"01-05-2021 13h49m16 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"01-05-2021 13h49m24 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions/new"}
+{"time":"01-05-2021 13h57m05 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"01-05-2021 13h57m10 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"01-05-2021 13h57m25 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions/start/8"}
+{"time":"01-05-2021 13h57m33 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"01-05-2021 13h57m48 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/"}
+{"time":"01-05-2021 13h57m52 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary"}
+{"time":"01-05-2021 13h57m54 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary/voluntary/chat/private/4"}
+{"time":"01-05-2021 13h57m56 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary/voluntary/chat/private/Ol%C3%A1!"}
+{"time":"01-05-2021 13h58m03 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions/8/edit"}
+{"time":"01-05-2021 13h58m11 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions/8"}
+{"time":"01-05-2021 13h58m11 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"01-05-2021 13h58m22 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions/start/8"}
+{"time":"01-05-2021 13h58m31 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
+{"time":"01-05-2021 13h59m10 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary"}
+{"time":"01-05-2021 13h59m10 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/api/authorize.json"}
+{"time":"01-05-2021 13h59m13 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary/voluntary/chat/private/5"}
+{"time":"01-05-2021 13h59m16 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary"}
+{"time":"01-05-2021 13h59m16 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/api/authorize.json"}
+{"time":"01-05-2021 13h59m23 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"01-05-2021 14h18m00 \n","session":null,"route":"/api/get_notification/14"}
+{"time":"01-05-2021 14h18m06 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/"}
+{"time":"01-05-2021 14h18m06 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/voluntary"}
+{"time":"01-05-2021 14h18m08 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/voluntary/voluntary/chat/private/40"}
+{"time":"01-05-2021 14h20m26 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/"}
+{"time":"01-05-2021 14h20m26 \n","session":null,"route":"/api/get_notification/9"}
+{"time":"01-05-2021 14h20m26 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/voluntary"}
+{"time":"01-05-2021 14h20m31 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/voluntary/voluntary/chat/private/24"}
+{"time":"01-05-2021 14h20m31 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/voluntary/voluntary/chat/private/Ol%C3%A1!"}
+{"time":"01-05-2021 14h20m41 \n","session":null,"route":"/api/get_notification/9"}
+{"time":"01-05-2021 14h20m50 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/api/authorize.json"}
+{"time":"01-05-2021 14h37m40 \n","session":null,"route":"/api/get_notification/24"}
+{"time":"01-05-2021 14h41m08 \n","session":null,"route":"/api/get_notification/20"}
+{"time":"01-05-2021 15h09m02 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/voluntary"}
+{"time":"01-05-2021 15h09m02 \n","session":{"id":14,"entity_name":"Luiz Celso","name":"celso","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T11:42:29.669Z","updated_at":"2021-04-26T11:42:29.669Z"},"route":"/api/authorize.json"}
+{"time":"01-05-2021 15h16m01 \n","session":null,"route":"/"}
+{"time":"01-05-2021 15h16m11 \n","session":null,"route":"/"}
+{"time":"01-05-2021 15h17m31 \n","session":null,"route":"/api/get_notification/27"}
+{"time":"01-05-2021 15h23m28 \n","session":null,"route":"/api/get_notification/5"}
+{"time":"01-05-2021 15h29m33 \n","session":null,"route":"/"}
+{"time":"01-05-2021 15h43m41 \n","session":null,"route":"/api/get_notification/8"}
+{"time":"01-05-2021 16h05m24 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/"}
+{"time":"01-05-2021 16h05m24 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary"}
+{"time":"01-05-2021 16h05m26 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/81"}
+{"time":"01-05-2021 16h05m30 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/api/authorize.json"}
+{"time":"01-05-2021 16h05m32 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/81"}
+{"time":"01-05-2021 16h05m37 \n","session":null,"route":"/api/get_notification/27"}
+{"time":"01-05-2021 16h06m40 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/82"}
+{"time":"01-05-2021 16h06m40 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/Ol%C3%A1!"}
+{"time":"01-05-2021 16h07m04 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/81"}
+{"time":"01-05-2021 16h07m07 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/82"}
+{"time":"01-05-2021 16h07m08 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/Ol%C3%A1!"}
+{"time":"01-05-2021 16h07m13 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/api/authorize.json"}
+{"time":"01-05-2021 16h07m15 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/82"}
+{"time":"01-05-2021 16h07m18 \n","session":{"id":27,"entity_name":"Matheus Orines","name":"matheusorines","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-30T11:17:20.348Z","updated_at":"2021-04-30T11:17:20.348Z"},"route":"/voluntary/voluntary/chat/private/Ol%C3%A1!"}
+{"time":"01-05-2021 16h13m41 \n","session":null,"route":"/"}
+{"time":"01-05-2021 16h13m42 \n","session":null,"route":"/"}
+{"time":"01-05-2021 16h28m24 \n","session":null,"route":"/api/get_notification/4"}
+{"time":"01-05-2021 16h28m34 \n","session":{"id":4,"entity_name":"IM","name":"tami","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:19:14.474Z","updated_at":"2021-04-25T20:19:14.474Z"},"route":"/"}
+{"time":"01-05-2021 16h28m34 \n","session":{"id":4,"entity_name":"IM","name":"tami","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:19:14.474Z","updated_at":"2021-04-25T20:19:14.474Z"},"route":"/voluntary"}
+{"time":"01-05-2021 16h28m39 \n","session":{"id":4,"entity_name":"IM","name":"tami","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:19:14.474Z","updated_at":"2021-04-25T20:19:14.474Z"},"route":"/voluntary/voluntary/chat/private/9"}
+{"time":"01-05-2021 16h28m40 \n","session":{"id":4,"entity_name":"IM","name":"tami","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:19:14.474Z","updated_at":"2021-04-25T20:19:14.474Z"},"route":"/voluntary/voluntary/chat/private/Ol%C3%A1!"}
+{"time":"01-05-2021 16h29m22 \n","session":{"id":4,"entity_name":"IM","name":"tami","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:19:14.474Z","updated_at":"2021-04-25T20:19:14.474Z"},"route":"/voluntary/voluntary/chat/private/11"}
+{"time":"01-05-2021 16h29m50 \n","session":{"id":4,"entity_name":"IM","name":"tami","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T20:19:14.474Z","updated_at":"2021-04-25T20:19:14.474Z"},"route":"/api/authorize.json"}
+{"time":"01-05-2021 16h30m18 \n","session":null,"route":"/"}
+{"time":"01-05-2021 16h50m59 \n","session":null,"route":"/api/get_notification/7"}
+{"time":"01-05-2021 16h59m31 \n","session":null,"route":"/api/get_notification/14"}
+{"time":"01-05-2021 17h06m02 \n","session":null,"route":"/api/get_notification/16"}
+{"time":"01-05-2021 17h12m24 \n","session":null,"route":"/"}
+{"time":"01-05-2021 17h42m03 \n","session":null,"route":"/"}
+{"time":"01-05-2021 17h57m46 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"01-05-2021 18h46m55 \n","session":null,"route":"/api/get_notification/24"}
+{"time":"01-05-2021 19h47m49 \n","session":null,"route":"/api/get_notification/18"}
+{"time":"01-05-2021 19h54m12 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/"}
+{"time":"01-05-2021 19h54m12 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary"}
+{"time":"01-05-2021 19h54m14 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary/voluntary/chat/private/54"}
+{"time":"01-05-2021 19h54m15 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary/voluntary/chat/private/Ol%C3%A1!"}
+{"time":"01-05-2021 19h54m36 \n","session":null,"route":"/api/get_notification/18"}
+{"time":"01-05-2021 19h54m55 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/api/authorize.json"}
+{"time":"01-05-2021 19h55m01 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary"}
+{"time":"01-05-2021 19h55m01 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/api/authorize.json"}
+{"time":"01-05-2021 19h55m03 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary/voluntary/chat/private/51"}
+{"time":"01-05-2021 19h55m12 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/voluntary/voluntary/chat/private/53"}
+{"time":"01-05-2021 19h55m15 \n","session":{"id":18,"entity_name":"Thiago silva","name":"thiagohs","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-26T16:26:06.067Z","updated_at":"2021-04-27T12:38:16.246Z"},"route":"/api/authorize.json"}
+{"time":"01-05-2021 20h05m31 \n","session":null,"route":"/api/get_notification/27"}
+{"time":"01-05-2021 20h11m21 \n","session":null,"route":"/api/get_notification/8"}
+{"time":"01-05-2021 20h29m40 \n","session":null,"route":"/"}
+{"time":"01-05-2021 20h29m50 \n","session":null,"route":"/"}
+{"time":"01-05-2021 20h30m01 \n","session":null,"route":"/"}
+{"time":"01-05-2021 20h30m21 \n","session":null,"route":"/"}
+{"time":"01-05-2021 21h03m03 \n","session":null,"route":"/"}
+{"time":"01-05-2021 21h34m24 \n","session":null,"route":"/api/get_notification/15"}
+{"time":"01-05-2021 21h54m45 \n","session":null,"route":"/api/get_notification/25"}
+{"time":"01-05-2021 21h58m05 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"01-05-2021 22h10m41 \n","session":null,"route":"/api/get_notification/13"}
+{"time":"01-05-2021 22h20m01 \n","session":null,"route":"/"}
+{"time":"01-05-2021 22h20m06 \n","session":null,"route":"/"}
+{"time":"01-05-2021 22h34m16 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/"}
+{"time":"01-05-2021 22h34m16 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher"}
