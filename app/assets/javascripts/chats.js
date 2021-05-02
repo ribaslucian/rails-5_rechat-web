@@ -45,7 +45,7 @@ function connect(origin_user_id) {
 //                        .append(an_app.$compile(data['message_html'])(an_scope));
 
                     capture_interaction_start();
-//                    order();
+                    order();
                     scroll();
                     flash = false;
                 }
