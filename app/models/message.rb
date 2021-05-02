@@ -293,6 +293,7 @@ class Message < ApplicationRecord
     m = Message
     .where(destiny_user_id: params[:user_id])
     .where('interaction_id IS NOT NULL')
+    .where('chat_open = false')
     .where('count_views = 0') #.where("chat_open != ? OR chat_open IS NULL", false)
     .order('id desc')
     .limit(1)
@@ -306,6 +307,7 @@ class Message < ApplicationRecord
       notification: true,
       contact: Contact.select(:name).find(m.contact_id).name,
       content: m.content,
+      m: m
     }
   end
 end
