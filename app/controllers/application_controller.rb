@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
 #    ActiveRecord::Base.connection.execute("BEGIN TRANSACTION; END;")
     
     ## log
-#    open('log/access.txt', 'a') { |f|
+    open('log/access.txt', 'a') { |f|
 #    open('/home/sda3/lucian/rechat-web2/log-access.txt', 'a') { |f|
       f.puts({
           time: Time.now.strftime("%d-%m-%Y %H\h%M\m%S\s\n"),
