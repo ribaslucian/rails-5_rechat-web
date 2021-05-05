@@ -292,9 +292,7 @@ class Message < ApplicationRecord
   def self.get_notification params
     m = Message
     .where(destiny_user_id: params[:user_id])
-    .where('interaction_id IS NOT NULL')
-    .where('chat_open = false')
-    .where('count_views = 0') #.where("chat_open != ? OR chat_open IS NULL", false)
+    .where('interaction_id IS NOT NULL') # .where("chat_open = ? OR chat_open IS NULL OR count_views = 0", false)
     .order('id desc')
     .limit(1)
     .first()
