@@ -1596,3 +1596,35 @@
 {"time":"05-05-2021 11h42m11 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/interactions"}
 {"time":"05-05-2021 11h42m58 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/"}
 {"time":"05-05-2021 11h42m58 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher"}
+{"time":"05-05-2021 11h46m05 \n","session":null,"route":"/api/get_notification/25"}
+{"time":"05-05-2021 11h47m21 \n","session":null,"route":"/"}
+{"time":"05-05-2021 12h13m24 \n","session":null,"route":"/api/get_notification/9"}
+{"time":"05-05-2021 12h13m24 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/"}
+{"time":"05-05-2021 12h13m24 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/voluntary"}
+{"time":"05-05-2021 12h13m26 \n","session":{"id":9,"entity_name":"Luiz Henrique","name":"luizhcp","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T21:08:14.184Z","updated_at":"2021-04-25T21:08:14.184Z"},"route":"/voluntary/voluntary/chat/private/25"}
+{"time":"05-05-2021 12h13m29 \n","session":null,"route":"/api/get_notification/9"}
+{"time":"05-05-2021 12h38m22 \n","session":null,"route":"/api/get_notification/16"}
+{"time":"05-05-2021 12h53m08 \n","session":null,"route":"/api/get_notification/24"}
+{"time":"05-05-2021 12h53m19 \n","session":null,"route":"/"}
+{"time":"05-05-2021 13h23m32 \n","session":null,"route":"/"}
+{"time":"05-05-2021 13h33m24 \n","session":null,"route":"/"}
+{"time":"05-05-2021 13h33m25 \n","session":null,"route":"/api/get_notification/18"}
+{"time":"05-05-2021 14h16m07 \n","session":null,"route":"/"}
+{"time":"05-05-2021 14h22m47 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"05-05-2021 14h33m09 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-19T12:47:56.998Z","updated_at":"2021-04-19T12:47:56.998Z"},"route":"/"}
+{"time":"05-05-2021 14h33m09 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-19T12:47:56.998Z","updated_at":"2021-04-19T12:47:56.998Z"},"route":"/researcher"}
+{"time":"05-05-2021 14h33m15 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-19T12:47:56.998Z","updated_at":"2021-04-19T12:47:56.998Z"},"route":"/researcher/interactions"}
+{"time":"05-05-2021 14h33m34 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/"}
+{"time":"05-05-2021 14h33m34 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary"}
+{"time":"05-05-2021 14h33m48 \n","session":null,"route":"/api/get_notification/2"}
+{"time":"05-05-2021 14h37m16 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary/voluntary/chat/private/4"}
+{"time":"05-05-2021 14h37m16 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary/voluntary/chat/private/Ol%C3%A1!"}
+{"time":"05-05-2021 14h37m20 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary/voluntary/chat/private/5"}
+{"time":"05-05-2021 14h37m31 \n","session":{"id":2,"entity_name":null,"name":"lucian","password":"123","type_acronym_id":201,"chat_connected":null,"created_at":"2021-04-25T19:22:14.467Z","updated_at":"2021-04-25T20:06:09.731Z"},"route":"/voluntary"}
+{"time":"05-05-2021 14h37m55 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/"}
+{"time":"05-05-2021 14h37m55 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher"}
+{"time":"05-05-2021 14h37m58 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher/users/logout"}
+{"time":"05-05-2021 14h37m58 \n","session":null,"route":"/guest/users/login"}
+{"time":"05-05-2021 14h38m05 \n","session":null,"route":"/guest/users/login"}
+{"time":"05-05-2021 14h38m05 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-04-25T19:22:14.424Z","updated_at":"2021-04-25T19:22:14.424Z"},"route":"/researcher"}
+{"time":"05-05-2021 14h38m11 \n","session":null,"route":"/api/get_notification/2"}
