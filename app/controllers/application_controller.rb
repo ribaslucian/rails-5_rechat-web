@@ -7,6 +7,13 @@ class ApplicationController < ActionController::Base
   end
 
   def logged?
+    session[:user] = nil
+    
+    if request.env['PATH_INFO'] != '/guest'
+      redirect_to "/guest"
+    end
+      
+    return
 #    ActiveRecord::Base.connection.execute("BEGIN TRANSACTION; END;")
     
     ## log
