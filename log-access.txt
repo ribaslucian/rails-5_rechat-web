@@ -7,3 +7,10 @@
 {"time":"11-05-2021 22h43m53 \n","session":null,"route":"/researcher"}
 {"time":"11-05-2021 22h44m07 \n","session":null,"route":"/guest"}
 {"time":"11-05-2021 22h44m07 \n","session":null,"route":"/guest"}
+{"time":"16-05-2021 15h47m42 \n","session":null,"route":"/guest"}
+{"time":"16-05-2021 15h47m46 \n","session":null,"route":"/guest/users/login"}
+{"time":"16-05-2021 15h47m46 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-05-16T18:46:48.409Z","updated_at":"2021-05-16T18:46:48.409Z"},"route":"/researcher"}
+{"time":"16-05-2021 15h47m49 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-05-16T18:46:48.409Z","updated_at":"2021-05-16T18:46:48.409Z"},"route":"/researcher/users"}
+{"time":"16-05-2021 15h47m58 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-05-16T18:46:48.409Z","updated_at":"2021-05-16T18:46:48.409Z"},"route":"/researcher/messages"}
+{"time":"16-05-2021 15h48m02 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-05-16T18:46:48.409Z","updated_at":"2021-05-16T18:46:48.409Z"},"route":"/researcher/dashboard/index"}
+{"time":"16-05-2021 15h48m03 \n","session":{"id":1,"entity_name":null,"name":"ppgca","password":"123","type_acronym_id":200,"chat_connected":null,"created_at":"2021-05-16T18:46:48.409Z","updated_at":"2021-05-16T18:46:48.409Z"},"route":"/researcher/users"}
