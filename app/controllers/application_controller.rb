@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
 
   def logged?
     
-    return d Sqlitedatatopg.go();
+#    return d Sqlitedatatopg.migrate_acronyms_to_pg();
     
 #    session[:user] = nil
 #    
