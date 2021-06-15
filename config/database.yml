@@ -1,4 +1,4 @@
-### pg
+## pg
 #default: &default
 #  adapter: postgresql
 #  encoding: utf-8
@@ -21,7 +21,7 @@
 #production:
 #  <<: *default
 #  database: rechat-production
-#
+
 
 
 
