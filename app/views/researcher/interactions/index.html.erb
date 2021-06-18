@@ -31,7 +31,7 @@
 <%#*<th>Horário</th>%>
                 <th style="text-align: center !important;">Tot. Mensagens</th>
                 <th style="text-align: center !important;">Tot. de <br/> Visualizações</th>
-                <th style="text-align: center !important;">Tempo tot. de Foco</th>
+                <th style="text-align: center !important;">Tempo tot. de Foco (ms)</th>
                 <th style="text-align: center !important;">
                     Favoritadas &<br/>
                     Compartilhamentos
@@ -111,11 +111,13 @@
                     </td>
 
                     <td style="text-align: center !important;">
-                        <% time_focus = Message.sql("SELECT sum(time_focus) FROM messages WHERE interaction_id = '#{i.id}'").first['sum(time_focus)'] %>
+                        <%# time_focus = Message.sql("SELECT sum(time_focus) FROM messages WHERE interaction_id = '#{i.id}'").first['sum(time_focus)'] %>
+                        <% time_focus = Message.sql("SELECT sum(time_focus) FROM messages WHERE interaction_id = '#{i.id}'").first['sum'].to_f %>
 
                         <% if time_focus != nil && time_focus > 0 %>
                           <div style="color: #1b68a3;">
-                              <%= '%.2f' % time_focus %>ms
+                              <%#= '%.2f' % time_focus %>
+                              <%= number_to_currency(time_focus, separator: ',', delimiter: '', format: '%n') %>
                           </div>
                         <% else %>
                           <div style="font-size: 90%; color: grey;">
