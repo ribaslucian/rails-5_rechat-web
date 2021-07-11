@@ -61,6 +61,6 @@ module MyChat
     # DateTime / Time
     # ----------------------------
     # Time::DATE_FORMATS[:default] = "%d/%m/%Y %I:%M" 
-    Time::DATE_FORMATS[:default] = "%d/%m/%Y %H:%M" 
+    Time::DATE_FORMATS[:default] = "%d/%m/%Y %H:%M:%S" 
   end
 end

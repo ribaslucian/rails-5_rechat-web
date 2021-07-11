@@ -13,7 +13,8 @@ class Researcher::ReportsController < Researcher::ResearcherController
   
   
   def messages
-    @messages = View::Message.all.order(created: :desc)
+    #@messages = View::Message.all.order(created_at: :desc)
+    @messages = Message.all.order(created_at: :desc)
   end
   
 end

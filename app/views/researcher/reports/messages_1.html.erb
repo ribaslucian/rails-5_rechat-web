@@ -1,0 +1,247 @@
+<script>
+  function downloadCSV(csv, filename) {
+      var csvFile;
+      var downloadLink;
+
+      // CSV file
+      // csvFile = new Blob([csv], {type: "text/csv"});
+      csvFile = new Blob(["\ufeff", csv]);
+
+      // Download link
+      downloadLink = document.createElement("a");
+
+      // File name
+      downloadLink.download = filename;
+
+      // Create a link to the file
+      downloadLink.href = window.URL.createObjectURL(csvFile);
+
+      // Hide download link
+      downloadLink.style.display = "none";
+
+      // Add the link to DOM
+      document.body.appendChild(downloadLink);
+
+      // Click download link
+      downloadLink.click();
+  }
+
+  function exportTableToCSV(filename) {
+      var csv = [];
+      var rows = document.querySelectorAll("table tr");
+
+      for (var i = 0; i < rows.length; i++) {
+          var row = [], cols = rows[i].querySelectorAll("td, th");
+
+          for (var j = 0; j < cols.length; j++)
+              row.push(cols[j].innerText);
+
+          csv.push(row.join(";"));
+      }
+
+      // Download CSV file
+      downloadCSV(csv.join("\n"), filename);
+  }
+  
+  $(document).ready(function(){
+      var d = new Date();
+      var month = d.getMonth() + 1;
+      var day = d.getDate();
+      var hours = d.getHours();
+      var minutes = d.getMinutes();
+      var date_str = d.getFullYear() + '-' +
+              (month < 10 ? '0' : '') + month + '-' +
+              (day < 10 ? '0' : '') + day + ' ' +
+              hours + 'h' + minutes + 'm'
+
+      exportTableToCSV('Rechat - Relatório de Mensagens Completo ' + date_str + '.csv');
+      window.close();
+  });
+</script>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Data de Registro</th>
+            <th>Tipo de Conteudo</th>
+            <th>Conteudo</th>
+            <th>Usuario Origem</th>
+            <th>Contato Origem</th>
+            <th>Usuario Destino</th>
+            <th>Contato Destino</th>
+            <th>Bot</th>
+            <th>Bot Sequencia</th>
+            <th>Categoria</th>
+            <th>Favorita</th>
+            <th>Compartilhamentos</th>
+            <th>Visualizado</th>
+            <th>Visualizacoes</th>
+            <th>Tempo Total de Foco(ms)</th>
+            <th>Polaridade Emocional</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @messages.each do |m| %>
+          <tr>
+
+              <!-- id -->
+              <td>
+                  <%= m.id %>
+              </td>
+
+              <!-- data de registro -->
+              <td>
+                  <%= m.created_at %>
+              </td>
+
+              <!-- tipo de conteudo -->
+              <td>
+                  <%= m.type_content_name %>
+              </td>
+
+              <!-- conteudo -->
+              <td>
+  <%#= m.content %>
+                  [...]
+              </td>
+
+              <!-- usuário origem -->
+              <td>
+                  <% if m.destiny_user_id %>
+                    <% if m.origin_user_id == 0 %>
+                      Pesquisador
+                    <% else %>
+                      <%= m.origin_user_name %>
+                      (<%= m.contact_name %>)
+                    <% end %>
+                  <% else %>
+                    Msg. de Bot
+                  <% end %>
+              </td>
+
+              <!-- contato origem -->
+              <td>
+                  <%= m.contact_name %>
+              </td>
+
+              <!-- usuário destino -->
+              <td>
+                  <% if m.destiny_user_id %>
+                    <% if m.destiny_user_id == 0 %>
+                      Pesquisador
+                    <% else %>
+                      <%= m.destiny_user_name %>
+
+                      <% if m.type_acronym_id == 6 %>
+                        (<%= Contact.select(:name).find(m.destiny_contact_id).name %>)
+                      <% else %>
+                        (<%= m.contact_name %>)
+                      <% end %>
+                    <% end %>
+                  <% else %>
+                    Msg. de Bot
+                  <% end %>
+              </td>
+
+              <!-- contato destino -->
+              <td>
+                  <% if m.type_acronym_id == 6 %>
+                    (<%= Contact.select(:name).find(m.destiny_contact_id).name %>)
+                  <% else %>
+                    (<%= m.contact_name %>)
+                  <% end %>
+              </td>
+
+              <!-- bot -->
+              <td>
+                  <% if m.interaction_id %>
+                    <%= m.interaction_name %>
+                  <% else %>
+                    <% if !m.reference_interaction_id %>
+                      Não vinculada a Bot
+                    <% else %>
+                      Referente ao Bot
+
+                      <% if m.type_acronym_id != 6 %>
+                        <%= m.reference_interaction_name %>
+                      <% end %>
+                    <% end %>
+                  <% end %>
+              </td>
+
+              <!-- bot sequencia -->
+              <td>
+                  <% if m.interaction_id %>
+                    <% if m.interaction_ids %>
+                      <%= m.interaction_ids %>
+                    <% end %>
+                  <% else %>
+                    <% if !m.reference_interaction_id %>
+                      Não vinculada a Bot
+                    <% else %>
+                      <% if m.type_acronym_id == 6 %>
+                        <%= m.interaction_id %>
+                      <% end %>
+                    <% end %>
+                  <% end %>
+              </td>
+
+              <!-- categoria -->
+              <td>
+                  <%= m.type_name %>
+              </td>
+
+              <!-- favorita -->
+              <td>
+                  <% if m.favorited %>
+                    Sim
+                  <% else %>
+                    Não
+                  <% end %>
+              </td>
+
+              <!-- compartilhamentos -->
+              <td>
+                  <%= MessageShare.where(propagation_message_id: m.id).count %>
+              </td>
+
+              <!-- visualizado -->
+              <td>
+                  <% if m.count_views > 0 %>
+                    Sim
+                  <% else %>
+                    Não
+                  <% end %>
+              </td>
+
+              <!-- total de visualizacoes -->
+              <td>
+                  <%= m.count_views %>
+              </td>
+
+              <!-- Tempo total de Foco -->
+              <td>
+                  <div>
+                      <% if m.time_focus > 0 %>
+                        <%= '%.2f' % m.time_focus %>
+                      <% else %>
+                        0.00
+                      <% end %>
+              </td>
+
+              <!-- Polaridade Emocional -->
+              <td>
+                  <% if m.sentimental_score == nil || m.sentimental_score == 0 %>
+                    0
+                  <% elsif m.sentimental_score < 0 %>
+                    <%= '%.2f' % m.sentimental_score %>
+                  <% else %>
+                    <%= '%.2f' % m.sentimental_score %>
+                  <% end %>
+              </td>
+          </tr>
+        <% end %>
+    </tbody>
+</table>

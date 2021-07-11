@@ -42,8 +42,8 @@
       // Download CSV file
       downloadCSV(csv.join("\n"), filename);
   }
-  
-  $(document).ready(function(){
+
+  $(document).ready(function () {
       var d = new Date();
       var month = d.getMonth() + 1;
       var day = d.getDate();
@@ -62,169 +62,131 @@
 <table>
     <thead>
         <tr>
-            <th>ID</th>
+            <th>ID da Mensagem</th>
+            <th>Tipo da Mensagem</th>
+
+            <th>ID Chatbot</th>
+            <th>ID da Mensagem no Chatbot</th>
+            <th>ID do Chatbot de Referência</th>
+
+            <th>ID do Usuário Origem</th>
+            <th>ID do Contato Origem</th>
+
+            <th>ID do Usuário Destino</th>
+            <th>ID do COntato Destino</th>
+
+            <th>Tipo do Conteúdo</th>
+            <%#*<th>Conteúdo</th>%>
+            <th>URL</th>
+
+            <th>Polaridade</th>
+            <th>Tempo de Foco</th>
+            <th>Visualizações</th>
+            <th>Favoritada</th>
+
+            <th>Chat Aberto</th>
+
             <th>Data de Registro</th>
-            <th>Tipo de Conteudo</th>
-            <th>Conteudo</th>
-            <th>Usuario Origem</th>
-            <th>Usuario Destino</th>
-            <th>Bot</th>
-            <th>Bot Sequencia</th>
-            <th>Categoria</th>
-            <th>Favorita</th>
-            <th>Compartilhamentos</th>
-            <th>Visualizado</th>
-            <th>Visualizacoes</th>
-            <th>Tempo Total de Foco(ms)</th>
-            <th>Polaridade Emocional</th>
+            <th>Data de Envio</th>
+            
+            <th>Conteúdo</th>
+            
+            
+            <%#*<th>id</th>%>
+            <%#*<th>type</th>%>
+
+            <%#*<th>chatbot_id</th>%>
+            <%#*<th>chatbot_sequence_id</th>%>
+            <%#*<th>chatbot_reference_id</th>%>
+
+            <%#*<th>origin_user_id</th>%>
+            <%#*<th>contact_origin_id</th>%>
+
+            <%#*<th>destiny_user_id</th>%>
+            <%#*<th>contact_destiny_id</th>%>
+
+            <%#*<th>type_content</th>%>
+            <%#*<th>content</th>%>
+            <%#*<th>url</th>%>
+
+            <%#*<th>polarity</th>%>
+            <%#*<th>time_focus</th>%>
+            <%#*<th>count_views</th>%>
+            <%#*<th>favorited</th>%>
+
+            <%#*<th>chat_open</th>%>
+
+            <%#*<th>created_at</th>%>
+            <%#*<th>date_send</th>%>
+            
+            <%#*<th>content</th>%>
         </tr>
     </thead>
 
     <tbody>
         <% @messages.each do |m| %>
           <tr>
+              <td><%= m.id %></td>
 
-              <!-- id -->
+              <!-- type -->
               <td>
-                  <%= m.id %>
-              </td>
-
-              <!-- data de registro -->
-              <td>
-                  <%= m.created_at %>
-              </td>
-
-              <!-- tipo de conteudo -->
-              <td>
-                  <%= m.type_content_name %>
-              </td>
-
-              <!-- conteudo -->
-              <td>
-  <%#= m.content %>
-                  [...]
-              </td>
-
-              <!-- usuário origem -->
-              <td>
-                  <% if m.destiny_user_id %>
-                    <% if m.origin_user_id == 0 %>
-                      Pesquisador
-                    <% else %>
-                      <%= m.origin_user_name %>
-                      (<%= m.contact_name %>)
-                    <% end %>
+                  <% if (m.type_acronym_id == 1) %>
+                    Mensagem de Controle
+                  <% elsif (m.type_acronym_id == 2) %>
+                    Mensagem Alvo
+                  <% elsif (m.type_acronym_id == 3) %>
+                    Resposta de Controle
+                  <% elsif (m.type_acronym_id == 4) %>
+                    Resposta Alvo
+                  <% elsif (m.type_acronym_id == 5) %>
+                    Aguardar Resposta
                   <% else %>
-                    Msg. de Bot
+                    Compartilhamento
                   <% end %>
               </td>
 
-              <!-- usuário destino -->
-              <td>
-                  <% if m.destiny_user_id %>
-                    <% if m.destiny_user_id == 0 %>
-                      Pesquisador
-                    <% else %>
-                      <%= m.destiny_user_name %>
 
-                      <% if m.type_acronym_id == 6 %>
-                        (<%= Contact.select(:name).find(m.destiny_contact_id).name %>)
-                      <% else %>
-                        (<%= m.contact_name %>)
-                      <% end %>
-                    <% end %>
+              <!-- chatbot_id -->
+              <td><%= m.interaction_id %></td>
+              <!-- chatbot_sequence_id -->
+              <td><%= m.interaction_ids %></td>
+              <!-- chatbot_reference_id -->
+              <td><%= m.reference_interaction_id %></td>
+
+
+
+              <td><%= m.origin_user_id %></td>
+              <!-- contact_origin_id -->
+              <td><%= m.contact_id %></td>
+
+              <td><%= m.destiny_user_id %></td>
+              <!-- contact_destiny_id -->
+              <td><%= m.destiny_contact_id %></td>
+
+
+              
+              <!-- type_content -->
+              <td>
+                  <% if (m.type_content_acronym_id == 50) %>
+                    Textual
                   <% else %>
-                    Msg. de Bot
+                    Imagem
                   <% end %>
               </td>
+              <td><%= m.url %></td>
 
-              <!-- bot -->
-              <td>
-                  <% if m.interaction_id %>
-                    <%= m.interaction_name %>
-                  <% else %>
-                    <% if !m.reference_interaction_id %>
-                      Não vinculada a Bot
-                    <% else %>
-                      Referente ao Bot
+              <!-- polarity -->
+              <td><%= m.polarity_scores.nil? ? '' : m.polarity_scores['compound'] %></td>
+              <td><%= m.time_focus %></td>
+              <td><%= m.count_views %></td>
+              <td><%= m.favorited %></td>
 
-                      <% if m.type_acronym_id != 6 %>
-                        <%= m.reference_interaction_name %>
-                      <% end %>
-                    <% end %>
-                  <% end %>
-              </td>
+              <td><%= m.chat_open %></td>
 
-              <!-- bot sequencia -->
-              <td>
-                  <% if m.interaction_id %>
-                    <% if m.interaction_ids %>
-                      <%= m.interaction_ids %>
-                    <% end %>
-                  <% else %>
-                    <% if !m.reference_interaction_id %>
-                      Não vinculada a Bot
-                    <% else %>
-                      <% if m.type_acronym_id == 6 %>
-                        <%= m.interaction_id %>
-                      <% end %>
-                    <% end %>
-                  <% end %>
-              </td>
-
-              <!-- categoria -->
-              <td>
-                  <%= m.type_name %>
-              </td>
-
-              <!-- favorita -->
-              <td>
-                  <% if m.favorited %>
-                    Sim
-                  <% else %>
-                    Não
-                  <% end %>
-              </td>
-
-              <!-- compartilhamentos -->
-              <td>
-                  <%= MessageShare.where(propagation_message_id: m.id).count %>
-              </td>
-
-              <!-- visualizado -->
-              <td>
-                  <% if m.count_views > 0 %>
-                    Sim
-                  <% else %>
-                    Não
-                  <% end %>
-              </td>
-
-              <!-- total de visualizacoes -->
-              <td>
-                  <%= m.count_views %>
-              </td>
-
-              <!-- Tempo total de Foco -->
-              <td>
-                  <div>
-                      <% if m.time_focus > 0 %>
-                        <%= '%.2f' % m.time_focus %>
-                      <% else %>
-                        0.00
-                      <% end %>
-              </td>
-
-              <!-- Polaridade Emocional -->
-              <td>
-                  <% if m.sentimental_score == nil || m.sentimental_score == 0 %>
-                    0
-                  <% elsif m.sentimental_score < 0 %>
-                    <%= '%.2f' % m.sentimental_score %>
-                  <% else %>
-                    <%= '%.2f' % m.sentimental_score %>
-                  <% end %>
-              </td>
+              <td><%= m.date_send.strftime("%d/%m/%Y %H:%M:%S") %></td>
+              <td><%= m.created_at.strftime("%d/%m/%Y %H:%M:%S") %></td>
+              
+              <td><%= m.content %></td>
           </tr>
         <% end %>
     </tbody>
