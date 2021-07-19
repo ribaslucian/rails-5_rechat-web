@@ -131,7 +131,7 @@
                       ").first['count(*)']
                     %>
 
-                      <% if count_messages_received > 0 %>
+                      <% if !count_messages_received.nil? && count_messages_received > 0 %>
                         <%
                         polarity_received = Message.sql("
                           SELECT sum(sentimental_score)
@@ -186,7 +186,7 @@
         WHERE origin_user_id = #{i.id}
                       ").first['count(*)']
                     %>
-                      <% if count_messages_send > 0 %>
+                      <% if !count_messages_send.nil? && count_messages_send > 0 %>
                         <%
                         polarity_send = Message.sql("
                           SELECT sum(sentimental_score)
@@ -234,7 +234,7 @@
 
 
                       <!-- compartilhamentos -->
-                      <% if count_messages_received > 0 %>
+                      <% if !count_messages_received.nil? && count_messages_received > 0 %>
 
                         <%
                         count_shared = Message.sql("
@@ -262,7 +262,7 @@
 
 
                       <!-- favoritas -->
-                      <% if count_messages_received > 0 %>
+                      <% if !count_messages_received.nil? && count_messages_received > 0 %>
                         <%
                         #count_stars = Message.sql("
           #SELECT count(*)
