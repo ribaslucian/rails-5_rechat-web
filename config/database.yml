@@ -12,7 +12,7 @@ default: &default
 
 development:
   <<: *default
-  database: rechat-dev
+  database: rechat
 
 test:
   <<: *default

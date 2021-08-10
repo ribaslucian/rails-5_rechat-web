@@ -73,7 +73,7 @@ ActiveRecord::Schema.define(version: 2020_03_19_213834) do
 
   create_table "messages", force: :cascade do |t|
     t.text "content"
-    t.datetime "date_send", default: -> { "now()" }, null: false
+    t.datetime "date_send", default: -> { "CURRENT_TIMESTAMP" }, null: false
     t.bigint "interaction_id"
     t.integer "type_acronym_id", default: 3, null: false
     t.json "sent_users_id"
